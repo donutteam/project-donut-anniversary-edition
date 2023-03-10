@@ -1,4 +1,0 @@
-LoadDisposableCar("donut\cars\frink_v_iron.p3d","frink_v","AI");
-LoadP3DFile("art\missions\level07\mission3cam.p3d");
-
-LoadP3DFile( "art\frontend\dynaload\images\msnicons\char\frink.p3d" );
