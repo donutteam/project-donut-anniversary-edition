@@ -1,0 +1,18 @@
+LoadP3DFile("art\missions\level03\m1.p3d");
+
+LoadDisposableCar("art\cars\cNerd.p3d","cNerd","AI");
+//LoadDisposableCar("art\cars\comic_v.p3d","comic_v","OTHER");  // WE NEED THIS FOR THE FORCED CAR MISSION
+LoadDisposableCar("art\cars\compactA.p3d","compactA","AI");  //The following three are here just in case I replace them with the Duff Truck.
+LoadDisposableCar("art\cars\frink_v.p3d","frink_v","AI");
+LoadDisposableCar("art\cars\marge_v.p3d","marge_v","AI"); 
+LoadDisposableCar("art\cars\cCellA.p3d","cCellA","AI"); 
+
+LoadP3DFile("art\missions\level03\is_comic.p3d");
+LoadP3DFile("art\missions\generic\fline.p3d");
+LoadP3DFile("art\missions\level04\donut.p3d");
+
+LoadP3DFile( "art\frontend\dynaload\images\msnicons\location\itcstore.p3d" );
+LoadP3DFile( "art\frontend\dynaload\images\msnicons\location\android.p3d" );
+LoadP3DFile( "art\frontend\dynaload\images\msnicons\object\comic.p3d" );
+LoadP3DFile( "art\frontend\dynaload\images\msnicons\char\cbg.p3d" );
+LoadP3DFile( "Mods\art\cars\comic_v_2.0.p3d" );

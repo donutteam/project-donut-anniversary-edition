@@ -1,0 +1,299 @@
+SelectMission("m1");
+
+SetMissionResetPlayerOutCar("m1_homer_restart", "level7_carstart");
+//SetDynaLoadData("l7z1.p3d;l7r1.p3d;l7r7.p3d;l7i02.p3d@", "SimpsonsHouse");
+SetDynaLoadData("l7z1.p3d;l7r1.p3d;l7r7.p3d;");
+
+UsePedGroup(0);
+
+AddStage(0);
+	SetStageMessageIndex(12);
+	AddObjective("getin", "neither");
+		SetObjTargetVehicle("current");
+	CloseObjective();
+	SetStageTime(15);
+CloseStage();
+
+AddStage(1);
+	RESET_TO_HERE();
+	SetStageMessageIndex(3);
+	SetHUDIcon( "ned" );
+	SetMaxTraffic(3);
+	SetStageMusicAlwaysOn();
+	AddObjective("talkto");
+		AddNPC("ned","m1_ned");
+		AddObjectiveNPCWaypoint( "ned", "m1_ned_walk1" );
+		AddObjectiveNPCWaypoint( "ned", "m1_ned_walk2" );
+		AddObjectiveNPCWaypoint( "ned", "m1_ned_walk3" );
+		AddObjectiveNPCWaypoint( "ned", "m1_ned_walk2" );
+		AddObjectiveNPCWaypoint( "ned", "m1_ned_walk1" );
+		SetTalkToTarget("ned", 0, 0); // 0 - eclamation, 1 is gift, with optional hieight offset
+	CloseObjective();
+	AddStageTime(0);
+	AddCondition("timeout");
+	CloseCondition();
+CloseStage();
+
+AddStage(2);
+	AddStageTime(0); 
+	AddObjective("dialogue");
+		AmbientAnimationRandomize( 1, 0 );      // ( pc=0, npc=1) (nonrandom=0, random=1)
+		AmbientAnimationRandomize( 0, 0 );
+		SetConversationCam( 0, "pc_far" );
+		SetConversationCam( 1, "npc_far" );
+		SetConversationCam( 2, "pc_far" );
+		SetConversationCam( 3, "npc_far" );
+		SetConversationCam( 4, "pc_far" );
+		SetConversationCam( 5, "npc_far" );
+		AddAmbientNpcAnimation( "none" );
+		AddAmbientNpcAnimation( "dialogue_scratch_head" );
+		AddAmbientNpcAnimation( "none" );
+		AddAmbientNpcAnimation( "none" );
+		AddAmbientNpcAnimation( "none" );
+		AddAmbientNpcAnimation( "dialogue_yes" );
+		AddAmbientPcAnimation( "dialogue_shake_hand_in_air" );
+		AddAmbientPcAnimation( "none" );
+		AddAmbientPcAnimation( "dialogue_cross_arms" );
+		AddAmbientPcAnimation( "none" );
+		AddAmbientPcAnimation( "dialogue_open_arm_hand_gesture" );
+		AddAmbientPcAnimation( "none" );
+		SetCamBestSide( "m1_bestside2" );
+		SetDialogueInfo("homer","ned","firstaid",0);
+		SetDialoguePositions("m1_ned_walk1","m1_ned","m1_moe_walk2");
+	CloseObjective();
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex(108);
+	SetHUDIcon( "firstaid" );
+	AddObjective( "goto" );
+		TurnGotoDialogOff();
+		SetDestination("m1_firstaid", "medkit"); 
+	CloseObjective();
+	AddStageTime(5);
+	AddCondition("timeout");
+	CloseCondition();
+	SetCompletionDialog("boards");
+	ShowStageComplete();
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex(215);
+	SetHUDIcon( "cletushs" );
+	AddObjective( "goto" );
+		SetDestination( "m1_cletushouse", "wplanks");
+		AddStageVehicle("cletu_v","m1_cletustruck","NULL","Missions\level07\M7race.con", "cletus");
+		//SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+	AddStageTime(17); 
+	AddCondition("timeout");
+	CloseCondition();
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex(107);
+	SetHUDIcon( "boards" );
+	AddObjective("goto");
+		TurnGotoDialogOff();
+		SetDestination("m1_object","wplanks");
+	CloseObjective();
+	AddStageTime(0);
+	AddCondition("timeout");
+	CloseCondition();
+	ShowStageComplete();
+	//SetCompletionDialog("boards2","cletus");
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex(48);
+	SetHUDIcon( "cletu_v" );
+	ActivateVehicle("cletu_v","NULL","chase"); 
+	AddObjective("destroy","neither");
+		SetObjTargetVehicle("cletu_v");
+	CloseObjective();
+	AddObjective("losetail");
+		SetObjTargetVehicle("cletu_v");
+		SetObjDistance(190);
+	CloseObjective();
+	AddCondition("race");
+		SetCondTargetVehicle("cletu_v");
+	AddStageTime(30);
+	AddCondition("timeout");
+	CloseCondition();
+	StageStartMusicEvent("M7_drama");
+	ShowStageComplete();
+	SetCompletionDialog("boards2","cletus");
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex(214);
+	SetHUDIcon( "moehouse" );
+	AddObjective( "goto" );
+		AddNPC("moe","m1_moe");
+		AddStageVehicle("moe_v","m1_moecar","NULL","Missions\level07\M1Moe.con", "moe");
+		SetDestination( "m1_moeshouse", "carsphere" );
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+	AddStageTime(35); 
+	AddCondition("timeout");
+	CloseCondition();
+	StageStartMusicEvent("M1_start");
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex();
+	ActivateVehicle("moe_v","NULL","evade");	//race makes it very easy, for a level 1 "tutorial" chase.
+	SetVehicleAIParams( "moe_v", 0, 1 );
+	AddStageWaypoint( "m2_AI_path18" );
+	AddStageWaypoint( "m2_AI_path" );
+	AddStageWaypoint( "m2_AI_path10" );
+	AddStageWaypoint( "m2_AI_path2" );
+	AddObjective("follow","goto");
+		SetObjTargetVehicle("moe_v");
+	CloseObjective();
+	AddCondition("followdistance");
+		SetFollowDistances(0, 180); /// (Change back to 160 once finished testing.)
+		SetCondTargetVehicle("moe_v");
+	CloseCondition();
+	ShowStageComplete();
+CloseStage();
+
+AddStage(0);
+	AddObjective("timer");
+		StayInBlack();
+		SetDurationTime(1);
+		AddStageVehicle("moe_v","m1_moepark2","NULL","NULL", "");
+		AddStageCharacter ("homer", "m0_kwikemart", "", "current", "m1_moepark");
+	CloseObjective();
+	ShowStageComplete();
+CloseStage();
+
+AddStage(1);
+	SetStageMessageIndex(83);
+	SetHUDIcon( "moe" );
+	SetStageMusicAlwaysOn();
+	AddObjective("talkto");
+		AddNPC("moe","m1_moe");
+		SetTalkToTarget("moe", 0, 0); // 0 - eclamation, 1 is gift, with optional hieight offset
+	CloseObjective();
+CloseStage();
+
+AddStage(0);
+	AddStageTime(0);
+	AddObjective("dialogue");
+		AmbientAnimationRandomize( 1, 0 );      // ( pc=0, npc=1) (nonrandom=0, random=1)
+		AmbientAnimationRandomize( 0, 0 );
+		//SetConversationCam( 0, "pc_far" );
+		//SetConversationCam( 1, "npc_far" );
+		//SetConversationCam( 2, "pc_far" );
+		//SetConversationCam( 3, "npc_far" );
+		//SetConversationCam( 4, "pc_far" );
+		//SetConversationCam( 5, "npc_near" );
+		AddAmbientNpcAnimation( "none" );
+		AddAmbientNpcAnimation( "dialogue_scratch_head" );
+		AddAmbientNpcAnimation( "none" );
+		AddAmbientNpcAnimation( "dialogue_yes" );
+		AddAmbientNpcAnimation( "none" );
+		AddAmbientNpcAnimation( "dialogue_cross_arms" );
+		AddAmbientPcAnimation( "dialogue_shake_hand_in_air" );
+		AddAmbientPcAnimation( "none" );
+		AddAmbientPcAnimation( "dialogue_no" );
+		AddAmbientPcAnimation( "none" );
+		AddAmbientPcAnimation( "dialogue_hands_on_hips" );
+		AddAmbientPcAnimation( "none" );
+		//SetCamBestSide( "m1_bestside3" );
+		SetDialogueInfo("homer","moe","chainsaw",0);
+		//SetDialoguePositions("m1_homertalk","m1_moe","m1_moe_walk2");
+	CloseObjective();
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex(216);
+	SetHUDIcon( "chainsaw" );
+	AddObjective("goto");
+		TurnGotoDialogOff();
+		SetDestination("m1_chainsaw","saw");
+	CloseObjective();
+	ShowStageComplete();
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex(12);
+	AddObjective("getin", "neither");
+		SetObjTargetVehicle("current");
+	CloseObjective();
+	SetStageTime(25);
+CloseStage();
+
+AddStage(1);
+	SetStageMessageIndex(217);
+	SetHUDIcon( "simpsons" );
+	AddObjective("goto");
+		SetDestination( "m1_simpsonshouse", "carsphere" );
+		AddStageVehicle("zombi_v","m1_zombiestart","Missions\level03\M1ncc.con","", "");
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+	AddStageTime(0);
+	AddCondition("timeout");
+	CloseCondition();
+CloseStage();
+
+AddStage(0);
+	SetStageMessageIndex(48);
+	//SetHUDIcon( "nerd" );
+	ActivateVehicle("zombi_v","NULL","chase"); 
+	AddObjective("destroy","neither");
+		SetObjTargetVehicle("zombi_v");
+	CloseObjective();
+	AddObjective("losetail");
+		SetObjTargetVehicle("zombi_v");
+		SetObjDistance(220);
+	CloseObjective();
+	AddCondition("race");
+		SetCondTargetVehicle("zombi_v");
+	AddStageTime(40);
+	AddCondition("timeout");
+	CloseCondition();
+	StageStartMusicEvent("M4_start");
+	ShowStageComplete();
+CloseStage();
+
+AddStage(1);
+	SetStageMessageIndex(217);
+	SetHUDIcon( "simpsons" );
+	AddObjective("goto");
+		SetDestination( "m1_simpsonshouse", "carsphere" );
+		SetCollectibleEffect("wrench_collect");
+	CloseObjective();
+	AddStageTime(25);
+	AddCondition("timeout");
+	CloseCondition();
+CloseStage();
+
+//AddStage(1);
+//	SetStageMessageIndex(269);
+//	SetHUDIcon("simpsons");
+//	AddObjective("interior");
+//		SetDestination("SimpsonsHouse", "simp_mission_doorstar");
+//	CloseObjective();
+//CloseStage();
+
+AddStage("final"); 
+	AddObjective("timer");
+		SetDurationTime(0.5);
+	CloseObjective();
+CloseStage();
+
+CloseMission();
+
+
+//dialogue_hands_in_air
+//dialogue_hands_on_hips
+//dialogue_scratch_head
+//dialogue_shaking_fist
+//dialogue_thinking
+//dialogue_yes
+//dialogue_no
+//dialogue_cross_arms
+//dialogue_open_arm_hand_gesture
+//dialogue_shake_hand_in_air

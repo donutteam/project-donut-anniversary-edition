@@ -1,0 +1,12 @@
+create daSoundResourceData named cCellD_v
+{
+    AddFilename ( "sound/carsound/cellcar.rsd" 1.000000 )
+    SetLooping ( true )
+    SetTrim ( 0.670000 )
+}
+create daSoundResourceData named cCellD_horn
+{
+    AddFilename ( "sound/carsound/horn-firebird.rsd" 1.000000 )
+    SetTrim ( 0.810000 )
+    SetLooping ( true )
+}

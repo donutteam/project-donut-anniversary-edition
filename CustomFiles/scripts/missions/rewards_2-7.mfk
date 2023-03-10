@@ -1,0 +1,224 @@
+
+// Level 2
+	//Vehicles - Default
+	//BindReward( "honor_v", "art\cars\honor_v.p3d", "car", "defaultcar", 2 );
+	
+	//Vehicles - Mission Rewards
+	BindReward( "gramp_v", "art\cars\gramp_v.p3d", "car", "bonusmission", 2 );
+	BindReward( "moe_v",   "art\cars\moe_v.p3d",   "car", "streetrace", 2 );
+	
+	//Vehicles - For Sale
+	BindReward( "mrplo_v", "art\cars\mrplo_v.p3d", "car", "forsale", 2, 300, "simpson" ); //Homer
+	BindReward( "cLimo",   "art\cars\cLimo.p3d",   "car", "forsale", 2, 250, "gil" );
+	BindReward( "cFire_v", "art\cars\cFire_v.p3d", "car", "forsale", 2, 350, "gil" );
+
+	//Vehicles - For Sale - Project Donut
+	BindReward( "cCube",    "art\cars\cCube.p3d",    "car", "forsale", 2, 300, "gil" );
+	BindReward( "redbrick", "art\cars\redbrick.p3d", "car", "forsale", 2, 200, "gil" );
+	BindReward( "mono_v",   "art\cars\mono_v.p3d",   "car", "forsale", 2, 200, "gil" );
+	
+	//Outfits - Default
+	BindReward( "bart", "art\chars\bart_m.p3d", "skin", "defaultskin", 2 );
+	
+	//Outfits - Moe's, DMV
+	BindReward( "b_tall",     "art\chars\b_tall_m.p3d", "skin", "forsale", 2, 250, "interior" );
+	BindReward( "b_football", "art\chars\b_foot_m.p3d", "skin", "forsale", 2, 300, "interior" );
+	BindReward( "b_ninja",    "art\chars\b_ninj_m.p3d", "skin", "forsale", 2, 350, "interior" );
+
+// Level 3
+	//Vehicles - Default
+	BindReward( "lisa_v", "art\cars\lisa_v.p3d", "car", "defaultcar", 3 );
+	
+	//Vehicles - Mission Rewards
+	BindReward( "skinn_v", "art\cars\skinn_v.p3d", "car", "bonusmission", 3 );
+	BindReward( "bookb_v", "art\cars\bookb_v.p3d", "car", "streetrace", 3 );
+	
+	//Vehicles - For Sale
+	BindReward( "otto_v",      "art\cars\otto_v.p3d",      "car", "forsale", 3, 400, "simpson" ); // Otto
+	BindReward( "cDonut",      "art\cars\cDonut.p3d",      "car", "forsale", 3, 350, "gil" );
+	BindReward( "cNerd",       "art\cars\cNerd.p3d",       "car", "forsale", 3, 350, "gil" );
+	BindReward( "fishingBoat", "art\cars\fishingBoat.p3d", "car", "forsale", 3, 400, "gil" );
+	
+	//Vehicles - For Sale - Project Donut
+	BindReward( "knigh_v", "art\cars\knigh_v.p3d", "car", "forsale", 3, 300, "gil" );
+
+	//Outfits - Default
+	BindReward( "lisa", "art\chars\lisa_m.p3d", "skin", "defaultskin", 3 );
+	
+	//Outfits - Android's Dungeon, Observatory
+	BindReward( "l_cool",    "art\chars\l_cool_m.p3d", "skin", "forsale", 3, 350, "interior");
+	BindReward( "l_florida", "art\chars\l_flor_m.p3d", "skin", "forsale", 3, 350, "interior");
+	BindReward( "l_jersey",  "art\chars\l_jers_m.p3d", "skin", "forsale", 3, 400, "interior");
+
+// Level 4
+	//Vehicles - Default
+	BindReward( "marge_v", "art\cars\marge_v.p3d", "car", "defaultcar", 4 );
+	
+	//Vehicles - Mission Rewards
+		//BindReward( "comic_v", "art\cars\comic_v.p3d", "car", "bonusmission", 4 );
+	BindReward( "krust_v", "art\cars\krust_v.p3d",       "car", "streetrace", 4 );
+	
+	//Vehicles - Mission Rewards - Project Donut
+	BindReward( "comic_v_2.0", "art\cars\comic_v_2.0.p3d", "car", "bonusmission", 4 );
+	
+	//Vehicles - For Sale
+	BindReward( "willi_v",  "art\cars\willi_v.p3d",        "car", "forsale", 4, 400, "simpson" ); // Willie
+	BindReward( "cKlimo",   "art\cars\cKlimo.p3d",         "car", "forsale", 4, 450, "gil" );
+	BindReward( "cCurator", "art\cars\cCurator.p3d",       "car", "forsale", 4, 400, "gil" );
+	
+	//Vehicles - For Sale - Project Donut
+	BindReward( "garbage",  "art\cars\garbage.p3d",  "car", "forsale", 4, 300, "gil" );
+	BindReward( "atv_v",    "art\cars\atv_v.p3d",    "car", "forsale", 4, 300, "gil" );
+	BindReward( "icecream", "art\cars\icecream.p3d", "car", "forsale", 4, 300, "gil" );
+	BindReward( "comic_v",  "art\cars\comic_v.p3d",  "car", "forsale", 4, 200, "gil" );
+
+	//Outfits - Default
+	BindReward( "marge", "art\chars\marge_m.p3d", "skin", "defaultskin", 4 );
+	
+	//Outfits - Kwik-e-Mart, Springfield Elemetary, Bart's Room
+	BindReward( "m_prison", "art\chars\m_pris_m.p3d", "skin", "forsale", 4, 400, "interior" );
+	BindReward( "m_pink", "art\chars\m_pink_m.p3d", "skin", "forsale", 4, 450, "interior" );
+	BindReward( "m_police", "art\chars\m_poli_m.p3d", "skin", "forsale", 4, 500, "interior" );
+
+// Level 5
+	//Vehicles - Default
+	BindReward( "apu_v", "art\cars\apu_v.p3d", "car", "defaultcar", 5 );
+	
+	//Vehicles - Mission Rewards
+		//BindReward( "frink_v", "donut\cars\frink_v_iron.p3d", "car", "bonusmission", 5 );
+	BindReward( "bbman_v", "art\cars\bbman_v.p3d", "car", "streetrace", 5 );
+	
+	//Vehicles - Mission Rewards - Project Donut
+	BindReward( "frink_v_iron", "donut\cars\frink_v_iron.p3d", "car", "bonusmission", 5 );
+	
+	//Vehicles - For Sale
+	BindReward( "carhom_v", "art\cars\carhom_v.p3d", "car", "forsale", 5, 600, "simpson" ); // Homer
+	BindReward( "wiggu_v", "art\cars\wiggu_v.p3d", "car", "forsale", 5, 525, "gil" );
+	BindReward( "cCola", "art\cars\cCola.p3d", "car", "forsale", 5, 450, "gil" );
+	
+	//Vehicles - For Sale - Project Donut
+	BindReward( "oblit_v", "art\cars\oblit_v.p3d", "car", "forsale", 5, 500, "gil" ); //Monster Truck
+	BindReward( "cNonup", "art\cars\cNonup.p3d", "car", "forsale", 5, 300, "simpson" ); //Nonuplet Minivan
+
+	BindReward( "apu", "art\chars\apu_m.p3d", "skin", "defaultskin", 5 );
+	BindReward( "a_army", "art\chars\a_army_m.p3d", "skin", "forsale", 5, 475, "interior" );
+	BindReward( "a_american", "art\chars\a_amer_m.p3d", "skin", "forsale", 5, 525, "interior" );
+	BindReward( "a_besharp", "art\chars\a_besh_m.p3d", "skin", "forsale", 5, 675, "interior" );
+
+// Level 6
+	//Vehicles - Default
+	BindReward( "bart_v", "art\cars\bart_v.p3d", "car", "defaultcar", 6 );
+	
+	//Vehicles - Mission Rewards
+	BindReward( "snake_v", "art\cars\snake_v.p3d", "car", "bonusmission", 6 );
+	BindReward( "burns_v", "art\cars\burns_v.p3d", "car", "streetrace", 6 );
+	
+	//Vehicles - For Sale
+	BindReward( "scorp_v", "art\cars\scorp_v.p3d", "car", "forsale", 6, 700, "simpson" ); // Kearney
+	BindReward( "cArmor", "art\cars\cArmor.p3d", "car", "forsale", 6, 500, "gil" );
+	BindReward( "cSedan", "art\cars\cSedan.p3d", "car", "forsale", 6, 600, "gil" );
+	
+	//Vehicles - For Sale - Project Donut
+	BindReward( "hype_v", "art\cars\hype_v.p3d", "car", "forsale", 6, 600, "gil" );
+	BindReward( "cMilk", "art\cars\cMilk.p3d", "car", "forsale", 6, 400, "simpson" );
+
+	//Outfits - Default
+	BindReward( "bart", "art\chars\bart_m.p3d", "skin", "defaultskin", 6 );
+	BindReward( "b_hugo", "art\chars\b_hugo_m.p3d", "skin", "forsale", 6, 500, "interior" );
+	BindReward( "b_military", "art\chars\b_mili_m.p3d", "skin", "forsale", 6, 600, "interior" );
+	BindReward( "b_man", "art\chars\b_man_m.p3d", "skin", "forsale", 6, 700, "interior" );
+
+// Level 7
+	//Vehicles - Default
+	BindReward( "homer_v", "art\cars\homer_v.p3d", "car", "defaultcar", 7 );
+	
+	//Vehicles - Mission Rewards
+	BindReward( "smith_v", "donut\cars\smith_v_pink.p3d", "car", "bonusmission", 7 );
+		//BindReward( "fone_v", "art\cars\fone_v.p3d", "car", "streetrace", 7 );
+	
+	//Vehicles - Mission Rewards - Project Donut
+	BindReward( "cBlbart", "art\cars\cBlbart.p3d", "car", "streetrace", 7);
+	
+	//Vehicles - For Sale
+	BindReward( "zombi_v", "art\cars\zombi_v.p3d", "car", "forsale", 7, 500,  "simpson" ); // Zombie
+	BindReward( "hbike_v", "art\cars\hbike_v.p3d", "car", "forsale", 7, 1200, "gil" );
+	BindReward( "cHears",  "art\cars\cHears.p3d",  "car", "forsale", 7, 700,  "gil" );
+	
+	//Vehicles - For Sale - Project Donut
+	BindReward( "UFO",     "art\cars\UFO.p3d",      "car", "forsale", 7, 1000, "gil" );
+	BindReward( "dune_v",  "art\cars\dune_v.p3d",   "car", "forsale", 7, 300,  "gil" );
+	BindReward( "gramR_v", "art\cars\gramR_v.p3d",  "car", "forsale", 7, 1200, "gil" );
+	BindReward( "drone",   "art\cars\drone.p3d",    "car", "forsale", 7, 500,  "gil" );
+	BindReward( "fone_v",  "art\cars\fone_v.p3d",   "car", "forsale", 7, 750,  "gil" );
+
+	//Outfits - Default
+	BindReward( "homer", "art\chars\homer_m.p3d", "skin", "defaultskin", 7 );
+	
+	//Outfits - Kwik-e-mart, Springfield Elementary, Bart's Room
+	BindReward( "h_scuzzy", "art\chars\h_scuz_m.p3d", "skin", "forsale", 7, 500, "interior" );
+	BindReward( "h_evil", "art\chars\h_evil_m.p3d", "skin", "forsale", 7, 550, "interior" );
+	BindReward( "h_donut", "art\chars\h_donu_m.p3d", "skin", "forsale", 7, 600, "interior" );
+
+	
+// Level 2
+	SetCarAttributes( "honor_v", 1.5, 2, 1.5, 5 );
+	SetCarAttributes( "gramp_v", 1.5, 1.5, 3.5, 3 );
+	SetCarAttributes( "moe_v", 2, 1.5, 2.5, 3.5 );
+	SetCarAttributes( "mrplo_v", 2, 1.5, 3.5, 3 );
+	SetCarAttributes( "cLimo", 1.5, 1.5, 3.5, 2.5 );
+	SetCarAttributes( "cFire_v", 3, 0.5, 5, 1 );
+
+// Level 3
+	SetCarAttributes( "lisa_v", 2.5, 3, 1.5, 4.5 );
+	SetCarAttributes( "skinn_v", 2, 2, 2.5, 3 );
+	SetCarAttributes( "bookb_v", 2, 1.5, 3.5, 2.5 );
+	SetCarAttributes( "otto_v", 2, 1, 5, 2 );
+	SetCarAttributes( "cDonut", 0.5, 1.5, 3, 3 );
+	SetCarAttributes( "cNerd", 1.5, 2.5, 2.5, 4 );
+
+// Level 4
+	SetCarAttributes( "marge_v", 2.5, 1.5, 4, 3 );
+	SetCarAttributes( "comic_v", 2.5, 2, 3, 4 );
+	SetCarAttributes( "krust_v", 3, 3, 1.5, 5 );
+	SetCarAttributes( "willi_v", 3, 2.5, 3.5, 3.5 );
+	SetCarAttributes( "cKlimo", 2.5, 2, 4, 2.5 );
+	SetCarAttributes( "cCurator", 2.5, 3, 2.5, 4.5 );
+
+// Level 5
+	SetCarAttributes( "apu_v", 3.5, 3.5, 2.5, 3.5 );
+	SetCarAttributes( "frink_v", 4, 4, 1, 3 );
+	SetCarAttributes( "bbman_v", 4, 3, 2.5, 3.5 );
+	SetCarAttributes( "carhom_v", 4.5, 3.5, 3.5, 3 );
+	SetCarAttributes( "wiggu_v", 4, 3.5, 3, 4 );
+	SetCarAttributes( "cCola", 3, 1, 5, 1 );
+
+// Level 6
+	SetCarAttributes( "bart_v", 4, 4, 1.5, 5 );
+	SetCarAttributes( "snake_v", 4.5, 4, 2.5, 4.5 );
+	SetCarAttributes( "burns_v", 4, 2.5, 3.5, 4 );
+	SetCarAttributes( "scorp_v", 4.5, 4.5, 1.5, 4 );
+	SetCarAttributes( "cArmor", 1.5, 1.5, 5, 1.5 );
+	SetCarAttributes( "cSedan", 4, 4.5, 3, 4.5 );
+
+// Level 7
+	SetCarAttributes( "homer_v", 4.5, 4.5, 2.0, 4 );
+	SetCarAttributes( "smith_v", 4.5, 3, 4.5, 3.5 );
+	SetCarAttributes( "fone_v", 5, 5, 0.5, 5 );
+	SetCarAttributes( "zombi_v", 4.5, 5, 1.5, 4.5 );
+	SetCarAttributes( "hbike_v", 5, 4.5, 1, 3.5 );
+	SetCarAttributes( "cHears", 4.5, 4.5, 3.5, 4 );
+
+	SetCarAttributes( "gramR_v", 5, 5, 3.5, 3 );
+	
+	SetTotalWasps( 2, 40 );
+	SetTotalWasps( 3, 40 );
+	SetTotalWasps( 4, 40 );
+	SetTotalWasps( 5, 40 );
+	SetTotalWasps( 6, 40 );
+	SetTotalWasps( 7, 40 );
+	SetTotalGags( 2, 11 );
+	SetTotalGags( 3, 11 );
+	SetTotalGags( 4, 15 );
+	SetTotalGags( 5, 6 );
+	SetTotalGags( 6, 11 );
+	SetTotalGags( 7, 16 );

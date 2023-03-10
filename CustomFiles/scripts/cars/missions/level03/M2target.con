@@ -1,0 +1,27 @@
+// PURSUIT AI - Easy police car
+
+SetMass(1250.0);
+SetGasScale(18.0);
+SetSlipGasScale(15.0); // 15?
+SetBrakeScale(8.0);
+SetTopSpeedKmh(180.0);
+SetMaxWheelTurnAngle(35.0);
+SetHighSpeedSteeringDrop(0.3); // was 1.0
+SetTireGrip(35.0);
+SetNormalSteering(115.0);
+SetSlipSteering(65.0);
+SetEBrakeEffect(0.35); // ,3?
+SetSlipSteeringNoEBrake(65.0);
+SetSlipEffectNoEBrake(0.01);
+
+SetCMOffsetX(0.0);
+SetCMOffsetY(-0.1);
+SetCMOffsetZ(0.2); // .1 or .2
+
+SetSuspensionLimit(0.7);
+SetSpringK(0.4);
+SetDamperC(0.3);
+
+SetSuspensionYOffset(0.0);
+
+SetHitPoints(100.0); //2.6

@@ -1,0 +1,11 @@
+LoadP3DFile( "art\missions\level01\m7.p3d" );
+
+LoadDisposableCar( "art\cars\smith_v_pink.p3d","smith_v","AI" );
+LoadDisposableCar( "art\cars\cVan.p3d", "cvan","AI" );
+LoadDisposableCar( "art\cars\cDonut.p3d","cDonut","AI");
+LoadDisposableCar( "art\cars\cLimo.p3d", "cLimo","AI");
+
+LoadP3DFile( "art\missions\generic\fline.p3d");
+
+LoadP3DFile( "art\frontend\dynaload\images\msnicons\location\mansion.p3d" );
+LoadP3DFile( "art\frontend\dynaload\images\msnicons\char\burns.p3d" );
