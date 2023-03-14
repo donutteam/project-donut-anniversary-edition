@@ -1,59 +1,54 @@
-// Doctor UFO BLARG
+// Chase Sedan 
 
-SetMass(3000.0);
+SetMass(1800.0);
 
-SetGasScale(8.2);
-SetSlipGasScale(9.2);
+SetGasScale(9.0);
+SetSlipGasScale(10.0);
 
-SetBrakeScale(6.0);
+SetBrakeScale(9.0);
 
-SetTopSpeedKmh(170.0);
+SetTopSpeedKmh(150.0);
 
 SetMaxWheelTurnAngle(30.0);
-SetHighSpeedSteeringDrop(0.34);
+SetHighSpeedSteeringDrop(0.3);
 
-SetTireGrip(2.0);
+SetTireGrip(3.05);
 
-SetNormalSteering(95.0);
+SetNormalSteering(80.0);
 
-SetSlipSteering(70.0);
-SetEBrakeEffect(0.25);
+SetSlipSteering(55.0);
+SetEBrakeEffect(0.4);
 
 SetSlipSteeringNoEBrake(50.0);
-SetSlipEffectNoEBrake(0.07);
+SetSlipEffectNoEBrake(0.2);
 
 SetCMOffsetX(0.0);
-SetCMOffsetY(0.1);
-SetCMOffsetZ(0.1);
+SetCMOffsetY(0.0);
+SetCMOffsetZ(0.3);
 
-SetSuspensionLimit(0.75);
+SetSuspensionLimit(0.65);
 SetSpringK(0.4);
-SetDamperC(0.25);
+SetDamperC(0.2);
 
-SetSuspensionYOffset(-0.1);
+SetSuspensionYOffset(-0.01);
 
-SetHitPoints(30.0);
-
-SetBurnoutRange(0.0);
-SetMaxSpeedBurstTime(2.0);
-SetDonutTorque(12.0);
+SetHitPoints(4.0);
 
 SetWeebleOffset(-0.75);
 
-SetWheelieRange(0.2);
-SetWheelieOffsetY(0.0);
-SetWheelieOffsetZ(-1.0);
+SetBurnoutRange(0.3);
+SetMaxSpeedBurstTime(2.5);
+SetDonutTorque(4.0);
 
-SetShadowAdjustments( -0.3, -0.3, -0.3, 0.0, -0.3, 0.0, -0.3, -0.2 );
+SetWheelieRange(0.15);
+SetWheelieOffsetY(0.0);
+SetWheelieOffsetZ(-0.7);
+
+SetShadowAdjustments(-0.2, 0.1, -0.2, 0.0, -0.2, 0.0, -0.2, 0.0);
 
 SetDriver("none");
+SetCharactersVisible(1);
+SetHasDoors(1);
+SetCharacterScale(0.95);
 
-SetHasDoors(0);
-SetIrisTransition(1);
-SetCharacterScale(0.8);
-
-SetShininess (0.0);
-
-SetGamblingOdds(2.0);
-
-SetHighRoof(1);
+SetGamblingOdds(1.0);
