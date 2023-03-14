@@ -6,7 +6,7 @@ Game.AddCharacter("homer","homer");
 
 Game.CreateChaseManager(HitAndRunCarModel, HitAndRunCarCON, 1);
 Game.SetHitAndRunDecay(0.1);
-Game.SetNumChaseCars(1);
+Game.SetNumChaseCars(Settings.HitAndRunCarCount);
 
 Game.AddNPCCharacterBonusMission("milhouse", "npd", "sr1_mhouse_sd", "sr1", "checkered", "intro", 0, "checkeredfinish");
 	Game.SetBonusMissionDialoguePos("sr1", "sr1_player", "sr1_mhouse_sd", "level1_carstart");
