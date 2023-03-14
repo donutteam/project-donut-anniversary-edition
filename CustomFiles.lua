@@ -1,0 +1,5 @@
+--
+-- Globals
+--
+
+Settings = GetSettings()
