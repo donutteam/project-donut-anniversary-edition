@@ -270,7 +270,9 @@ Game.AddBehaviour("beecamera", "ATTACK_PLAYER", "15.0", "3.0" , "1.0");
 
 Game.SetActorRotationSpeed("beecamera", "160.0");
 
-Game.AddShield("beecamera", "beeshield");
+if Settings.ShieldedWaspCameras then
+	Game.AddShield("beecamera", "beeshield");
+end
 
 Game.AddSpawnPointByLocatorScript("w_lemon","beecamera","Shelley","w_lemon","15.0","60");
 
