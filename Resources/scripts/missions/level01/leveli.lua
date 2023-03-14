@@ -4,7 +4,7 @@ Game.InitLevelPlayerVehicle("famil_v", "level1_carstart", "DEFAULT");
  
 Game.AddCharacter("homer","homer");
 
-Game.CreateChaseManager(HitAndRunCarModel, "Pursuit\\L1cop.con", 1);
+Game.CreateChaseManager(HitAndRunCarModel, HitAndRunCarCON, 1);
 Game.SetHitAndRunDecay(0.1);
 Game.SetNumChaseCars(1);
 
