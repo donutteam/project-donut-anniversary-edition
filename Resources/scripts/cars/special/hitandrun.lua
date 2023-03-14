@@ -85,3 +85,17 @@ Game.SetDamperC(0.3)
 Game.SetSuspensionYOffset(0.0)
 
 Game.SetHitPoints(Stats.HitPoints)
+
+if Settings.HitAndRunCarModel == 1 then
+	-- Hearse
+	Game.SetShadowAdjustments(-0.3, -0.1, -0.3, 0.0, -0.3, 0.0, -0.3, -0.2)
+elseif Settings.HitAndRunCarModel == 2 then
+	-- Hijacked Alien Police Car
+	Game.SetShadowAdjustments(-0.1, 0.0, -0.1, 0.0, -0.1, 0.0, -0.1, -0.1)
+elseif Settings.HitAndRunCarModel == 3 then
+	-- Mini UFO
+	-- 	No Shadow
+elseif Settings.HitAndRunCarModel == 4 then
+	-- Standard Police Car
+	Game.SetShadowAdjustments(-0.1, 0.0, -0.1, 0.0, -0.1, 0.0, -0.1, -0.1)
+end
