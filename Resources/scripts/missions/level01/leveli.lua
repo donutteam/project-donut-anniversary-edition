@@ -4,9 +4,9 @@ Game.InitLevelPlayerVehicle("famil_v", "level1_carstart", "DEFAULT");
  
 Game.AddCharacter("homer","homer");
 
-Game.CreateChaseManager("cPolice","Pursuit\\L1cop.con",1);
+Game.CreateChaseManager(HitAndRunCarModel, "Pursuit\\L1cop.con", 1);
 Game.SetHitAndRunDecay(0.1);
-Game.SetNumChaseCars("1");
+Game.SetNumChaseCars(1);
 
 Game.AddNPCCharacterBonusMission("milhouse", "npd", "sr1_mhouse_sd", "sr1", "checkered", "intro", 0, "checkeredfinish");
 	Game.SetBonusMissionDialoguePos("sr1", "sr1_player", "sr1_mhouse_sd", "level1_carstart");
