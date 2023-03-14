@@ -1,113 +1,125 @@
 SelectMission("bm1");
+	SetDynaLoadData("l1z7.p3d;l1r6.p3d;l1r7.p3d;");
+	SetMissionResetPlayerInCar("bm1_carstart");
 
-SetMissionResetPlayerInCar("bm1_carstart");
-SetDynaLoadData("l1z7.p3d;l1r6.p3d;l1r7.p3d;");
+	UsePedGroup(5); 
 
-UsePedGroup(5); 
+	AddStage(0);
+		RESET_TO_HERE();
 
-AddStage(0);
-	RESET_TO_HERE();
-	SetPresentationBitmap( "art/frontend/dynaload/images/mis01_08.p3d" );
-	SetStageMessageIndex(12);
-	AddObjective("getin");
-		SetObjTargetVehicle("current");
-	CloseObjective();
-CloseStage();
+		SetStageMessageIndex(12);
 
-AddStage(16);
-	SetStageMessageIndex(145);
-	SetHUDIcon( "cardboar" );
-	AddObjective("delivery");
-		AddCollectible("bm1_cardboard","poster_t");
-		AddCollectible("bm1_cardboard4","poster_t");
-		AddCollectible("bm1_cardboard1","poster_t");
-		AddCollectible("bm1_cardboard2","poster_t");
-		AddCollectible("bm1_cardboard3","poster_t");
-		AddCollectible("m3_ketchup1","poster_t");
-		AddCollectible("m3_ketchup19","poster_t");
-		AddCollectible("m6_cola_crate1","poster_t");
-		AddCollectible("m6_cola_crate15","poster_t");
-		AddCollectible("m6_cola_crate23","poster_t");
-		AddCollectible("m6_cola_crate29","poster_t");
-		AddCollectible("m3_ketchup4","poster_t");
-		AddCollectible("bm1_object3","poster_t");
-		AddCollectible("bm1_item8","poster_t");
-		AddCollectible("bm1_item7","poster_t");
-	CloseObjective();
-	SetStageTime(250);
-	AddCondition("timeout");
-	CloseCondition();
-	ShowStageComplete();
-CloseStage();
+		AddObjective("getin");
+			SetObjTargetVehicle("current");
+		CloseObjective();
+	CloseStage();
 
-AddStage(0);
-	SetStageMessageIndex(273);
-	SetHUDIcon( "tamacco" );
-	AddObjective( "goto" );
-		AddNPC("cletus","bm1_cletus_sd");
-		SetDestination( "l1_tommaco", "carsphere");
-		SetCollectibleEffect("wrench_collect");
-	CloseObjective();
-	AddStageTime(5);
-	AddCondition("timeout");
-	CloseCondition();
-CloseStage();
+	AddStage(16);
+		SetHUDIcon("cardboar");
+		SetStageMessageIndex(145);
+		SetStageTime(250);
+		
+		AddObjective("delivery");
+			AddCollectible("bm1_cardboard","poster_t");
+			AddCollectible("bm1_cardboard4","poster_t");
+			AddCollectible("bm1_cardboard1","poster_t");
+			AddCollectible("bm1_cardboard2","poster_t");
+			AddCollectible("bm1_cardboard3","poster_t");
+			AddCollectible("m3_ketchup1","poster_t");
+			AddCollectible("m3_ketchup19","poster_t");
+			AddCollectible("m6_cola_crate1","poster_t");
+			AddCollectible("m6_cola_crate15","poster_t");
+			AddCollectible("m6_cola_crate23","poster_t");
+			AddCollectible("m6_cola_crate29","poster_t");
+			AddCollectible("m3_ketchup4","poster_t");
+			AddCollectible("bm1_object3","poster_t");
+			AddCollectible("bm1_item8","poster_t");
+			AddCollectible("bm1_item7","poster_t");
+		CloseObjective();
+		
+		AddCondition("timeout");
+		CloseCondition();
+
+		ShowStageComplete();
+	CloseStage();
+
+	AddStage(0);
+		SetHUDIcon("tamacco");
+		SetStageMessageIndex(273);
+		AddStageTime(5);
+
+		AddObjective("goto");
+			AddNPC("cletus","bm1_cletus_sd");
+
+			SetDestination("l1_tommaco", "carsphere");
+			SetCollectibleEffect("wrench_collect");
+		CloseObjective();
+		
+		AddCondition("timeout");
+		CloseCondition();
+	CloseStage();
 
 
 
-AddStage(16);
-	SetStageMessageIndex(146);
-	SetHUDIcon( "tamacco" );
-	AddObjective("delivery");
-		AddCollectible("bm1_tomaco","tomat");
-		AddCollectible("bm1_tomaco1","tomat");
-		AddCollectible("bm1_tomaco2","tomat");
-		AddCollectible("bm1_tomaco3","tomat");
-		AddCollectible("bm1_tomaco4","tomat");
-		AddCollectible("bm1_tomaco5","tomat");
-		AddCollectible("bm1_tomaco6","tomat");
-		AddCollectible("bm1_tomaco7","tomat");
-		AddCollectible("bm1_tomaco8","tomat");
-		AddCollectible("bm1_tomaco9","tomat");
-		AddCollectible("bm1_tomaco10","tomat");
-		AddCollectible("bm1_tomaco11","tomat");
-		SetCollectibleEffect("bonestorm_explosion");
-	CloseObjective();
-	AddStageTime(5);
-	AddCondition("timeout");
-		//SetHitNRun();
-	CloseCondition();
-	ShowStageComplete();
-CloseStage();
+	AddStage(16);
+		SetHUDIcon("tamacco");
+		SetStageMessageIndex(146);
+		AddStageTime(5);
 
-AddStage(0);
-	SetStageMessageIndex(215);
-	SetHUDIcon( "cletushs" );
-	AddObjective( "goto" );
-		AddNPC("cletus","bm1_cletus_sd");
-		SetDestination( "bm_cletushouse", "carsphere");
-		SetCollectibleEffect("wrench_collect");
-	CloseObjective();
-	AddStageTime(45);
-	AddCondition("timeout");
-	CloseCondition();
-CloseStage();
+		AddObjective("delivery");
+			AddCollectible("bm1_tomaco","tomat");
+			AddCollectible("bm1_tomaco1","tomat");
+			AddCollectible("bm1_tomaco2","tomat");
+			AddCollectible("bm1_tomaco3","tomat");
+			AddCollectible("bm1_tomaco4","tomat");
+			AddCollectible("bm1_tomaco5","tomat");
+			AddCollectible("bm1_tomaco6","tomat");
+			AddCollectible("bm1_tomaco7","tomat");
+			AddCollectible("bm1_tomaco8","tomat");
+			AddCollectible("bm1_tomaco9","tomat");
+			AddCollectible("bm1_tomaco10","tomat");
+			AddCollectible("bm1_tomaco11","tomat");
+			SetCollectibleEffect("bonestorm_explosion");
+		CloseObjective();
+		
+		AddCondition("timeout");
+		CloseCondition();
 
-AddStage(0);
-	SetStageMessageIndex(25);
-	SetHUDIcon( "cletus" );
-	AddObjective("talkto");
-		AddNPC("cletus","bm1_cletus_sd");
-		AddObjectiveNPCWaypoint( "cletus", "bm1_cletus_walk1" );
-		SetTalkToTarget("cletus", 0, 0); // 0 - eclamation, 1 is gift, with optional hieight offset
-	CloseObjective();
-CloseStage();
+		ShowStageComplete();
+	CloseStage();
 
-AddStage(0,"final");
-	AddObjective("dialogue");
-		SetDialogueInfo("homer","cletus","cityboy",0);
-		SetCamBestSide( "bm1_bestside" );
-	CloseObjective();
-CloseStage();
+	AddStage(0);
+		SetHUDIcon("cletushs");
+		SetStageMessageIndex(215);
+		AddStageTime(45);
 
+		AddObjective("goto");
+			AddNPC("cletus","bm1_cletus_sd");
+
+			SetDestination( "bm_cletushouse", "carsphere");
+			SetCollectibleEffect("wrench_collect");
+		CloseObjective();
+
+		AddCondition("timeout");
+		CloseCondition();
+	CloseStage();
+
+	AddStage(0);
+		SetHUDIcon("cletus");
+		SetStageMessageIndex(25);
+
+		AddObjective("talkto");
+			AddNPC("cletus","bm1_cletus_sd");
+
+			AddObjectiveNPCWaypoint("cletus", "bm1_cletus_walk1");
+			SetTalkToTarget("cletus", 0, 0);
+		CloseObjective();
+	CloseStage();
+
+	AddStage(0, "final");
+		AddObjective("dialogue");
+			SetCamBestSide("bm1_bestside");
+			SetDialogueInfo("homer","cletus","cityboy",0);
+		CloseObjective();
+	CloseStage();
 CloseMission();

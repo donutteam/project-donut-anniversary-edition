@@ -1,6 +1,6 @@
 SelectMission("m0");
-	SetMissionResetPlayerInCar("level1_carstart");
 	SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;");
+	SetMissionResetPlayerInCar("level1_carstart");
 
 	UsePedGroup(0); 
 

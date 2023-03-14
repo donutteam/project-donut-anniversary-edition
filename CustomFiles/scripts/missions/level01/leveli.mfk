@@ -207,15 +207,15 @@ CreatePedGroup(2);
 ClosePedGroup();
 
 // Z3
-CreatePedGroup( 3 );
+CreatePedGroup(3);
 	AddPed("boy2",  2);
 	AddPed("boy3",  1);
 	AddPed("girl2", 2);
 	AddPed("girl3", 2);
-ClosePedGroup( );
+ClosePedGroup();
 
 // R3/Z4
-CreatePedGroup(4 );
+CreatePedGroup(4);
 	AddPed("fem4",  2);
 	AddPed("busm1", 2);
 	AddPed("busw1", 2);
