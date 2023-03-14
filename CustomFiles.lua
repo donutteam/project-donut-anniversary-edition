@@ -22,3 +22,15 @@ HitAndRunCarModels =
 }
 
 HitAndRunCarModel = HitAndRunCarModels[Settings.HitAndRunCarModel]
+
+RadarTopSprites = {}
+
+local RadarTopSpritesP3DFile = P3D.P3DFile(GetModPath() .. "/Resources/art/frontend/sprites/radartop.p3d")
+
+for chunk in RadarTopSpritesP3DFile:GetChunks(P3D.Identifiers.Sprite) do
+	local originalName = chunk.Name
+
+	chunk.Name = "radartop.png"
+
+    RadarTopSprites[originalName] = chunk
+end
