@@ -14,6 +14,7 @@ HitAndRunCarModels =
 {
 	"cHears",
 	"hjackpol",
+	"miniufo",
 	"cPolice",
 }
 
