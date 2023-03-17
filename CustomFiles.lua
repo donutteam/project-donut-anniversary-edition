@@ -13,7 +13,7 @@ P3D.LoadChunks(GetModPath() .. "/Resources/modules/P3DChunks")
 
 Settings = GetSettings()
 
-HitAndRunCarModels =
+local HitAndRunCarModels =
 {
 	"cHears",
 	"hjackpol",
