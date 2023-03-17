@@ -3133,6 +3133,36 @@ create carSoundParameters named miniufo
     SetRoadSkidClipName ( "frink_skid" )
     SetDirtSkidClipName ( "frink_skid" )
 }
+create carSoundParameters named mrploalt
+{
+    SetEngineClipName ( "mrplo" )
+    SetEngineIdleClipName ( "mrplo" )
+    SetDamagedEngineClipName ( "fire" )
+    SetHornClipName ( "mrplo_horn" )
+    SetReversePitchCapKmh ( 50.000000 )
+    SetReversePitchRange ( 0.500000 1.150000 )
+    SetShiftPoint ( 1 0.010000 )
+    SetShiftPoint ( 2 0.500000 )
+    SetShiftPoint ( 3 0.960000 )
+    SetShiftPoint ( 4 1.000000 )
+    SetShiftPoint ( 5 1.000000 )
+    SetGearPitchRange ( 1 0.530000 1.280000 )
+    SetGearPitchRange ( 2 0.960000 1.430000 )
+    SetGearPitchRange ( 3 1.170000 1.260000 )
+    SetGearPitchRange ( 4 1.350000 1.500000 )
+    SetGearPitchRange ( 5 0.980000 1.240000 )
+    SetIdleEnginePitch ( 0.530000 )
+    SetGearShiftPitchDrop ( 1 0.460000 )
+    SetGearShiftPitchDrop ( 2 0.490000 )
+    SetGearShiftPitchDrop ( 3 0.400000 )
+    SetGearShiftPitchDrop ( 4 0.410000 )
+    SetGearShiftPitchDrop ( 5 0.400000 )
+    SetAttackTimeMsecs ( 133.000000 )
+    SetDelayTimeMsecs ( 44 )
+    SetDecayTimeMsecs ( 252.000000 )
+    SetDecayFinishTrim ( 0.850000 )
+    SetDownshiftDamperSize ( 0.040000 )
+}
 create carSoundParameters named smithalt
 {
     SetEngineClipName ( "smith" )

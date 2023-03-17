@@ -11,6 +11,8 @@ Game.BindReward("homer",     "art\\chars\\homer_m.p3d",    "skin", "defaultskin"
 Game.BindReward("h_undrwr",  "art\\chars\\h_undr_m.p3d",   "skin", "forsale",     1, 200 * Settings.RewardPriceMultiplier, "interior")
 Game.BindReward("h_fat",     "art\\chars\\h_fat_m.p3d",    "skin", "forsale",     1, 225 * Settings.RewardPriceMultiplier, "interior")
 Game.BindReward("h_stcrobe", "art\\chars\\h_stcr_m.p3d",   "skin", "forsale",     1, 250 * Settings.RewardPriceMultiplier, "interior")
+Game.BindReward("h_work", "art\\chars\\h_work_m.p3d",   "skin", "forsale",     1, 250 * Settings.RewardPriceMultiplier, "interior")
+Game.BindReward("h_dtst", "art\\chars\\h_dtst_m.p3d",   "skin", "forsale",     1, 250 * Settings.RewardPriceMultiplier, "interior")
 
 --                               Top Speed   Acceleration   Toughness   Handling
 Game.SetCarAttributes("famil_v", 1.0,        1.5,           2.5,        4.0)
