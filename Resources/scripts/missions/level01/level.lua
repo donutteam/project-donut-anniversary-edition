@@ -31,13 +31,14 @@ Game.LoadP3DFile("art\\cars\\schoolbu.p3d")
 Game.LoadP3DFile("art\\chars\\homer_kickwave.p3d")
 Game.LoadP3DFile("art\\chars\\homer_electrocuted.p3d")
 
+Game.LoadP3DFile("art\\locators\\level01\\wasps.p3d")
+
 Game.LoadP3DFile("art\\missions\\generic\\missgen.p3d")
 Game.LoadP3DFile("art\\missions\\generic\\sim_door.p3d")
 
 Game.LoadP3DFile("art\\missions\\level01\\jumps.p3d")
 Game.LoadP3DFile("art\\missions\\level01\\l1_doors.p3d")
 Game.LoadP3DFile("art\\missions\\level01\\level.p3d")
-Game.LoadP3DFile("art\\missions\\level01\\wasps.p3d")
 
 Game.ClearGagBindings()
 
