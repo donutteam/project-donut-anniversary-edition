@@ -274,126 +274,50 @@ if Settings.EnableWaspCameraShields then
 	Game.AddShield("beecamera", "beeshield");
 end
 
-Game.AddSpawnPointByLocatorScript("w_lemon","beecamera","Shelley","w_lemon","15.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_schoolroof1","beecamera","Shelley","w_schoolroof1","15.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_bonuscar","beecamera","Shelley","w_bonuscar","50.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_stonetemple","beecamera","Shelley","w_stonetemple","60.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_trailor1","beecamera","Shelley","w_trailor1","50.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_trailor2","beecamera","Shelley","w_trailor2","50.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_cardguard","beecamera","Shelley","w_cardguard","60.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_bridge1","beecamera","Shelley","w_bridge1","30.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_bridge2","beecamera","Shelley","w_bridge2","30.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_barn","beecamera","Shelley","w_barn","20.0","60");
-
-Game.AddSpawnPointByLocatorScript("w_simpsons","beecamera","Shelley","w_simpsons","10.0","60");
-	Game.AddBehaviour("w_simpsons", "ATTACK_PLAYER", "10.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_simpsons", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_flanders","beecamera","Shelley","w_flanders","10.0","60");
-	Game.AddBehaviour("w_flanders", "ATTACK_PLAYER", "10.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_flanders", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_wiggum","beecamera","Shelley","w_wiggum","8.0","60");
-	Game.AddBehaviour("w_wiggum", "ATTACK_PLAYER", "20.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_wiggum", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_kwickemart","beecamera","Shelley","w_kwickemart","10.0","60");
-	Game.AddBehaviour("w_kwickemart", "ATTACK_PLAYER", "10.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_kwickemart", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_lardlad","beecamera","Shelley","w_lardlad","8.0","60");
-	Game.AddBehaviour("w_lardlad", "ATTACK_PLAYER", "20.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_lardlad", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_gasroof","beecamera","Shelley","w_gasroof","15.0","60");
-	Game.AddBehaviour("w_gasroof", "ATTACK_PLAYER", "10.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_gasroof", "ATTRACTION", "2.0", "20", "-1");
-
-Game.AddSpawnPointByLocatorScript("w_schoolroof2","beecamera","Shelley","w_schoolroof2","15.0","60");
-	Game.AddBehaviour("w_schoolroof2", "ATTACK_PLAYER", "20.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_schoolroof2", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_playground","beecamera","Shelley","w_playground","15.0","60");
-	Game.AddBehaviour("w_playground", "ATTACK_PLAYER", "10.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_playground", "ATTRACTION", "2.0", "20", "-1");
-
-Game.AddSpawnPointByLocatorScript("w_schoolstairs","beecamera","Shelley","w_schoolstairs","15.0","60");
-	Game.AddBehaviour("w_schoolstairs", "ATTACK_PLAYER", "20.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_schoolstairs", "ATTRACTION", "2.0", "20", "-1");
-
-Game.AddSpawnPointByLocatorScript("w_tower","beecamera","Shelley","w_tower","15.0","60");
-	Game.AddBehaviour("w_tower", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-	Game.AddBehaviour("w_tower", "ATTRACTION", "2.0", "20", "-1");
-
-Game.AddSpawnPointByLocatorScript("w_powerplant2","beecamera","Shelley","w_powerplant2","20.0","60"); -- In the Entrance of the Powerplant by Homer's Office
-
-Game.AddSpawnPointByLocatorScript("w_powerplant3","beecamera","Shelley","w_powerplant3","20.0","60"); -- In the Entrance of the Powerplant by Homer's Office
-
-Game.AddSpawnPointByLocatorScript("w_powerplant4","beecamera","Shelley","w_powerplant4","20.0","60"); -- In the Entrance of the Powerplant by Homer's Office
-
-Game.AddSpawnPointByLocatorScript("w_b_riverburger","beecamera","Shelley","w_b_riverburger","15.0","60"); --Behind Krusty Burger by the River
-	Game.AddBehaviour("w_b_riverburger", "ATTACK_PLAYER", "10.0", "5.0" , "-1.0");
-	Game.AddBehaviour("w_b_riverburger", "EVADE_PLAYER", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_b_everterr","beecamera","Shelley","w_b_everterr","15.0","60"); --Behind Evergreen Terrace Sign
-	Game.AddBehaviour("w_b_everterr", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-	Game.AddBehaviour("w_b_everterr", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_b_firetruck","beecamera","Shelley","w_b_firetruck","15.0","60"); --Behind Crashsite
-	Game.AddBehaviour("w_b_firetruck", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-	Game.AddBehaviour("w_b_firetruck", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_b_crashburger","beecamera","Shelley","w_b_crashburger","15.0","60"); --On top of Krusty Burger by Crashsite
-	Game.AddBehaviour("w_b_crashburger", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-	Game.AddBehaviour("w_b_crashburger", "ATTRACTION", "2.0","20","-1");
-
-Game.AddSpawnPointByLocatorScript("w_b_driveway","beecamera","Shelley","w_b_driveway","15.0","60"); --In driveway on Sideroad by Crashsite
-	Game.AddBehaviour("w_b_driveway", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-	Game.AddBehaviour("w_b_driveway", "ATTRACTION", "2.0", "20", "-1");
-
-Game.AddSpawnPointByLocatorScript("w_b_retire","beecamera","Shelley","w_b_retire","15.0","60"); --On top of Krusty Burger by Crashsite
-	Game.AddBehaviour("w_b_retire", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-	Game.AddBehaviour("w_b_retire", "ATTRACTION", "2.0", "20", "-1");
-
-Game.AddSpawnPointByLocatorScript("w_b_dip","beecamera","Shelley","w_b_dip","15.0","60"); --Under Drawbridge
-	Game.AddBehaviour("w_b_dip", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-	Game.AddBehaviour("w_b_dip", "ATTRACTION", "2.0", "20", "-1");
-
-Game.AddSpawnPointByLocatorScript("w_b_stopnshop","beecamera","Shelley","w_b_stopnshop","15.0","60"); --Under Drawbridge
-	Game.AddBehaviour("w_b_stopnshop", "ATTACK_PLAYER", "20.0", "5.0" , "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_opphouse","beecamera","Shelley","w_b2_opphouse","15.0","60"); --In the driveway of the house opposite the Simpsons.
-	Game.AddBehaviour("w_b2_opphouse", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_tree","beecamera","Shelley","w_b2_tree","15.0","60"); --Behind a tree near Evergreen Terrace
-	Game.AddBehaviour("w_b2_tree", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_gil7","beecamera","Shelley","w_b2_gil7","15.0","60"); --Behind Crashsite
-	Game.AddBehaviour("w_b2_gil7", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_oppkb","beecamera","Shelley","w_b2_oppkb","15.0","60"); --Near the Krusty Burger by the School
-	Game.AddBehaviour("w_b2_oppkb", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_battingcage","beecamera","Shelley","w_b2_battingcage","15.0","60"); --Behind the School's Batting Cage
-	Game.AddBehaviour("w_b2_battingcage", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_schoolparkinglot","beecamera","Shelley","w_b2_schoolparkinglot","15.0","60"); --In the School's Parking Lot
-	Game.AddBehaviour("w_b2_schoolparkinglot", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_stairs","beecamera","Shelley","w_b2_stairs","15.0","60"); --On stairs on the Rich Side
-	Game.AddBehaviour("w_b2_stairs", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_pool","beecamera","Shelley","w_b2_pool","15.0","60"); --Near the Rich Side pool
-	Game.AddBehaviour("w_b2_pool", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
-
-Game.AddSpawnPointByLocatorScript("w_b2_burns","beecamera","Shelley","w_b2_burns","15.0","60"); --In the back of Mr Burns Mansion
-	Game.AddBehaviour("w_b2_burns", "ATTACK_PLAYER", "20.0", "5.0", "-1.0");
+-- Start positioning Wasp Cameras. ~ Adelaide
+-- Chunk 1
+Game.AddSpawnPointByLocatorScript("1_1_RedHouse","beecamera","Shelley","1_1_RedHouse",25,25);
+Game.AddSpawnPointByLocatorScript("1_2_ParkSlide","beecamera","Shelley","1_2_ParkSlide",25,25);
+Game.AddSpawnPointByLocatorScript("1_3_FlandSide","beecamera","Shelley","1_3_FlandSide",20,20);
+Game.AddSpawnPointByLocatorScript("1_4_Wiggums","beecamera","Shelley","1_4_Wiggums",20,20);
+Game.AddSpawnPointByLocatorScript("1_5_Shadow","beecamera","Shelley","1_5_Shadow",15,15);
+Game.AddSpawnPointByLocatorScript("1_6_Krusty","beecamera","Shelley","1_6_Krusty",15,15);
+-- Chunk 2
+Game.AddSpawnPointByLocatorScript("2_1_Bridge","beecamera","Shelley","2_1_Bridge",20,20);
+Game.AddSpawnPointByLocatorScript("2_2_Driveway","beecamera","Shelley","2_2_Driveway",15,15);
+Game.AddSpawnPointByLocatorScript("2_3_TrailerParkA","beecamera","Shelley","2_3_TrailerParkA",15,15);
+Game.AddSpawnPointByLocatorScript("2_4_TrailerParkB","beecamera","Shelley","2_4_TrailerParkB",15,15);
+Game.AddSpawnPointByLocatorScript("2_5_TireFire","beecamera","Shelley","2_5_TireFire",20,20);
+Game.AddSpawnPointByLocatorScript("2_6_TomaccoA","beecamera","Shelley","2_6_TomaccoA",15,15);
+Game.AddSpawnPointByLocatorScript("2_7_TomaccoB","beecamera","Shelley","2_7_TomaccoB",15,15);
+Game.AddSpawnPointByLocatorScript("2_8_Ramp","beecamera","Shelley","2_8_Ramp",15,15);
+-- Chunk 3
+Game.AddSpawnPointByLocatorScript("3_1_Tank","beecamera","Shelley","3_1_Tank",15,15);
+Game.AddSpawnPointByLocatorScript("3_2_Catwalk","beecamera","Shelley","3_2_Catwalk",15,15);
+Game.AddSpawnPointByLocatorScript("3_3_LargePipes","beecamera","Shelley","3_3_LargePipes",15,15);
+Game.AddSpawnPointByLocatorScript("3_4_Chess","beecamera","Shelley","3_4_Chess",15,15);
+Game.AddSpawnPointByLocatorScript("3_5_Grass","beecamera","Shelley","3_5_Grass",30,30);
+Game.AddSpawnPointByLocatorScript("3_6_TunnelA","beecamera","Shelley","3_6_TunnelA",30,30);
+Game.AddSpawnPointByLocatorScript("3_7_TunnelB","beecamera","Shelley","3_7_TunnelB",30,30);
+-- Chunk 4
+Game.AddSpawnPointByLocatorScript("4_1_Roundabout","beecamera","Shelley","4_1_Roundabout",30,30);
+Game.AddSpawnPointByLocatorScript("4_2_Pool","beecamera","Shelley","4_2_Pool",20,20);
+Game.AddSpawnPointByLocatorScript("4_3_Bricks","beecamera","Shelley","4_3_Bricks",20,20);
+Game.AddSpawnPointByLocatorScript("4_4_GasStation","beecamera","Shelley","4_4_GasStation",20,20);
+Game.AddSpawnPointByLocatorScript("4_5_Bridge","beecamera","Shelley","4_5_Bridge",15,15);
+Game.AddSpawnPointByLocatorScript("4_6_Tower","beecamera","Shelley","4_6_Tower",15,15);
+-- Chunk 5
+Game.AddSpawnPointByLocatorScript("5_1_GroceryStore","beecamera","Shelley","5_1_GroceryStore",20,20);
+Game.AddSpawnPointByLocatorScript("5_2_SchoolSlide","beecamera","Shelley","5_2_SchoolSlide",15,15);
+Game.AddSpawnPointByLocatorScript("5_3_SchoolRoof","beecamera","Shelley","5_3_SchoolRoof",20,20);
+Game.AddSpawnPointByLocatorScript("5_4_Krusty","beecamera","Shelley","5_4_Krusty",20,20);
+Game.AddSpawnPointByLocatorScript("5_5_Church","beecamera","Shelley","5_5_Church",25,25);
+-- Chunk 6
+Game.AddSpawnPointByLocatorScript("6_1_Driveway","beecamera","Shelley","6_1_Driveway",20,20);
+Game.AddSpawnPointByLocatorScript("6_2_Retirement","beecamera","Shelley","6_2_Retirement",25,25);
+Game.AddSpawnPointByLocatorScript("6_3_Truck","beecamera","Shelley","6_3_Truck",20,20);
+Game.AddSpawnPointByLocatorScript("6_4_FireTruck","beecamera","Shelley","6_4_FireTruck",15,15);
+Game.AddSpawnPointByLocatorScript("6_5_KwikEMartA","beecamera","Shelley","6_5_KwikEMartA",15,15);
+Game.AddSpawnPointByLocatorScript("6_6_KwikEMartB","beecamera","Shelley","6_6_KwikEMartB",15,15);
+Game.AddSpawnPointByLocatorScript("6_7_Parking","beecamera","Shelley","6_7_Parking",20,20);
+Game.AddSpawnPointByLocatorScript("6_8_DuffTruck","beecamera","Shelley","6_8_DuffTruck",15,15);
