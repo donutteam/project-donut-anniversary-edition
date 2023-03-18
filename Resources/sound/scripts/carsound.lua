@@ -1,6 +1,6 @@
-local OriginalCarSoundScript = ReadFile("/GameData/sound/scripts/carsound.spt")
+local OriginalSoundScript = ReadFile("/GameData/sound/scripts/carsound.spt")
 
-Output(OriginalCarSoundScript)
+Output(OriginalSoundScript)
 
 Output(
 [[
