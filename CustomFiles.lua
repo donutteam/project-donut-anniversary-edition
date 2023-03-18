@@ -65,6 +65,8 @@ P3DChunkReplacements =
 }
 
 if Settings.RadarStyle == 2 then
+	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["radar.png"] = RadarSprites["radar_blue.png"]
+elseif Settings.RadarStyle == 3 then
 	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["radar.png"] = RadarSprites["radar_red.png"]
 end
 
