@@ -58,19 +58,28 @@ LoadSprites("radartop.png", GetModPath() .. "/Resources/art/frontend/sprites/rad
 
 P3DChunkReplacements =
 {
-	["art//frontend//scrooby//ingame.p3d"] =
-	{
-		["error.png"] = ErrorSprites["error_donut.png"],
-	}
+	["art//frontend//scrooby//ingame.p3d"] = {}
 }
 
-if Settings.RadarStyle == 2 then
+if Settings.IconStyle == 1 then
+	-- TODO: Replace with Tyler's Icon
+elseif Settings.IconStyle == 2 then
+	-- Do Nothing
+elseif Settings.IconStyle == 3 then
+	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["icon.png"] = ErrorSprites["error_simpsons_donut.png"]
+end
+
+if Settings.RadarStyle == 1 then
+	-- Do Nothing
+elseif Settings.RadarStyle == 2 then
 	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["radar.png"] = RadarSprites["radar_blue.png"]
 elseif Settings.RadarStyle == 3 then
 	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["radar.png"] = RadarSprites["radar_red.png"]
 end
 
-if Settings.RadarTopStyle == 2 then
+if Settings.RadarTopStyle == 1 then
+	-- Do Nothing
+elseif Settings.RadarTopStyle == 2 then
 	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["radartop.png"] = RadarTopSprites["radartop_partially_obscured.png"]
 elseif Settings.RadarTopStyle == 3 then
 	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["radartop.png"] = RadarTopSprites["radartop_fully_obscured.png"]
