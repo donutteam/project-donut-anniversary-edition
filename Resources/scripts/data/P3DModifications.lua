@@ -123,8 +123,8 @@ function InjectP3DModifications(filePath, modificationsKey)
 	--
 	-- Replace Chunks
 	--
-
-	for index, chunk in ipairs(P3DFile.Chunks) do
+	
+	for index, chunk in P3DFile:GetChunksIndexed() do
 		local replacedChunks = p3dModifications.ReplacedChunks[chunk.Identifier]
 
 		if replacedChunks ~= nil then
