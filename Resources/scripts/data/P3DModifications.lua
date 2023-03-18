@@ -2,7 +2,7 @@
 -- Local Functions
 --
 
-local function GetChunksFromP3D(p3dFilePath, table, chunkIdentifier, newName)
+local function GetNamedChunksFromP3D(p3dFilePath, table, chunkIdentifier, newName)
     local p3dFile = P3D.P3DFile(p3dFilePath)
 
     for chunk in p3dFile:GetChunks(chunkIdentifier) do
@@ -52,7 +52,7 @@ local P3DModifications =
 
 local ErrorSprites = {}
 
-GetChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/error.p3d", ErrorSprites, P3D.Identifiers.Sprite, "error.png")
+GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/error.p3d", ErrorSprites, P3D.Identifiers.Sprite, "error.png")
 
 if Settings.ErrorIconStyle == 1 then
 	P3DModifications["Frontend_Bootup"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pink_donut.png"]
@@ -73,7 +73,7 @@ end
 
 local RadarSprites = {}
 
-GetChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/radar.p3d", RadarSprites, P3D.Identifiers.Sprite, "radar.png")
+GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/radar.p3d", RadarSprites, P3D.Identifiers.Sprite, "radar.png")
 
 if Settings.RadarStyle == 1 then
 	P3DModifications["Frontend_Ingame"].ReplacedChunks[P3D.Identifiers.Sprite]["radar.png"] = RadarSprites["radar_blue.png"]
@@ -89,7 +89,7 @@ end
 
 local RadarTopSprites = {}
 
-GetChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/radartop.p3d", RadarTopSprites, P3D.Identifiers.Sprite, "radartop.png")
+GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/radartop.p3d", RadarTopSprites, P3D.Identifiers.Sprite, "radartop.png")
 
 if Settings.RadarTopStyle == 1 then
 	-- Do Nothing
