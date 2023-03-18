@@ -58,15 +58,17 @@ LoadSprites("radartop.png", GetModPath() .. "/Resources/art/frontend/sprites/rad
 
 P3DChunkReplacements =
 {
-	["art//frontend//scrooby//ingame.p3d"] = {}
+	["art//frontend//scrooby//bootup.p3d"] = {},
+	["art//frontend//scrooby//ingame.p3d"] = {},
 }
 
-if Settings.IconStyle == 1 then
+if Settings.ErrorIconStyle == 1 then
+	P3DChunkReplacements["art//frontend//scrooby//bootup.p3d"]["error.png"] = ErrorSprites["error_pink_donut.png"]
+	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["error.png"] = ErrorSprites["error_pink_donut.png"]
+elseif Settings.ErrorIconStyle == 2 then
 	-- TODO: Replace with Tyler's Icon
-elseif Settings.IconStyle == 2 then
+elseif Settings.ErrorIconStyle == 3 then
 	-- Do Nothing
-elseif Settings.IconStyle == 3 then
-	P3DChunkReplacements["art//frontend//scrooby//ingame.p3d"]["icon.png"] = ErrorSprites["error_simpsons_donut.png"]
 end
 
 if Settings.RadarStyle == 1 then
