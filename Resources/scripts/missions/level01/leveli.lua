@@ -270,7 +270,7 @@ Game.AddBehaviour("beecamera", "ATTACK_PLAYER", "15.0", "3.0" , "1.0");
 
 Game.SetActorRotationSpeed("beecamera", "160.0");
 
-if Settings.ShieldedWaspCameras then
+if Settings.EnableWaspCameraShields then
 	Game.AddShield("beecamera", "beeshield");
 end
 
