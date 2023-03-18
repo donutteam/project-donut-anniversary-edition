@@ -107,7 +107,7 @@ function InjectP3DModifications(filePath, modificationsKey)
 	--
 	-- Load P3D File
 	--
-	
+
 	local P3DFile = P3D.P3DFile(filePath)
 
 	--
@@ -125,8 +125,10 @@ function InjectP3DModifications(filePath, modificationsKey)
 	--
 
 	for index, chunk in ipairs(P3DFile.Chunks) do
-		if p3dModifications.ReplacedChunks[chunk.Identifier] ~= nil then
-			local replacementChunk = p3dModifications.ReplacedChunks[chunk.Identifier][chunk.Name]
+		local replacedChunks = p3dModifications.ReplacedChunks[chunk.Identifier]
+
+		if replacedChunks ~= nil then
+			local replacementChunk = replacedChunks[chunk.Name]
 
 			if replacementChunk ~= nil then
 				P3DFile.Chunks[index] = replacementChunk
