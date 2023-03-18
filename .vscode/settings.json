@@ -1,6 +1,15 @@
 {
-	"Lua.diagnostics.globals": [
+	"Lua.diagnostics.globals": 
+	[
+		"DirectoryGetEntries",
+		"Exists",
+		"GetFileExtension",
 		"GetModPath",
-		"GetSettings"
+		"GetSettings",
+		"IsHackLoaded",
+		"Output",
+		"ReadFile",
+		"GetPath",
+		"GetFileName"
 	]
 }
