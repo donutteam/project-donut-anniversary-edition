@@ -2,7 +2,7 @@
 -- Local Functions
 --
 
-local function GetNamedChunksFromP3D(p3dFilePath, table, chunkIdentifier, newName)
+local function LoadNamedChunksFromP3DFile(p3dFilePath, table, chunkIdentifier, newName)
     local p3dFile = P3D.P3DFile(p3dFilePath)
 
     for chunk in p3dFile:GetChunks(chunkIdentifier) do
@@ -21,38 +21,99 @@ end
 --
 
 local P3DModifications =
+{
+	Frontend_Bootup =
 	{
-		Frontend_Bootup =
-			{
-				ReplacedChunks = 
-					{
-						[P3D.Identifiers.Sprite] = {}
-					},
-			},
-		Frontend_Ingame =
-			{
-				ReplacedChunks = 
-					{
-						[P3D.Identifiers.Sprite] = {}
-					},
-			},
+		ReplacedChunks = 
+		{
+			[P3D.Identifiers.Sprite] = {}
+		},
+	},
+	Frontend_Ingame =
+	{
+		ReplacedChunks = 
+		{
+			[P3D.Identifiers.Sprite] = {}
+		},
+	},
 
-		Map_L1_TERRA =
-			{
-				ReplacedChunks =
-					{
-						[P3D.Identifiers.Texture] = {}
-					},
-			},
+	Map_L1_TERRA =
+	{
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
+	},
 
-		Map_L1_R6 =
-			{
-				ReplacedChunks =
-					{
-						[P3D.Identifiers.Texture] = {}
-					},
-			},
-	}
+	Map_L1_R3 =
+	{
+		RemovedChunkIndices =
+		{
+			-- card13 Locator
+			201,
+		},
+	},
+
+	Map_L1_R4A =
+	{
+		RemovedChunkIndices =
+		{
+			-- card15 Locator
+			109,
+		}
+	},
+
+	Map_L1_R6 =
+	{
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
+	},
+
+	Map_L1_Z1 =
+	{
+		RemovedChunkIndices =
+		{
+			-- card11 Locator
+			153,
+
+			-- card13 Locator
+			154,
+		},
+	},
+
+	Map_L1_Z2 =
+	{
+		RemovedChunkIndices =
+		{
+			-- card12 Locator
+			262,
+		},
+	},
+
+	Map_L1_Z6 =
+	{
+		RemovedChunkIndices =
+		{
+			-- card16 Locator
+			350,
+		},
+	},
+
+	Map_L1_Z7 =
+	{
+		RemovedChunkIndices =
+		{
+			-- card17 Locator
+			173,
+		},
+	},
+}
+
+--
+-- Collector Cards
+--
 
 --
 -- Error Icon Style Setting
@@ -60,7 +121,7 @@ local P3DModifications =
 
 local ErrorSprites = {}
 
-GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/error.p3d", ErrorSprites, P3D.Identifiers.Sprite, "error.png")
+LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/frontend/sprites/error.p3d", ErrorSprites, P3D.Identifiers.Sprite, "error.png")
 
 if Settings.ErrorIconStyle == 1 then
 	P3DModifications["Frontend_Bootup"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pink_donut.png"]
@@ -78,7 +139,7 @@ end
 if Settings.LevelTheme == 2 then
 	local Textures = {}
 
-	GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/textures/level-themes/autumn.p3d", Textures, P3D.Identifiers.Texture)
+	LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/textures/level-themes/autumn.p3d", Textures, P3D.Identifiers.Texture)
 
 	for textureName, texture in pairs(Textures) do
 		P3DModifications.Map_L1_TERRA.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
@@ -91,7 +152,7 @@ end
 
 local BillboardSignTextures = {}
 
-GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/textures/billboard-signs.p3d", BillboardSignTextures, P3D.Identifiers.Texture)
+LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/textures/billboard-signs.p3d", BillboardSignTextures, P3D.Identifiers.Texture)
 
 local DontEatBeefTexture = BillboardSignTextures["project_donut.png"]:Clone()
 
@@ -111,7 +172,7 @@ P3DModifications["Map_L1_R6"].ReplacedChunks[P3D.Identifiers.Texture]["Eat deer.
 
 local RadarSprites = {}
 
-GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/radar.p3d", RadarSprites, P3D.Identifiers.Sprite, "radar.png")
+LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/frontend/sprites/radar.p3d", RadarSprites, P3D.Identifiers.Sprite, "radar.png")
 
 if Settings.RadarStyle == 1 then
 	P3DModifications["Frontend_Ingame"].ReplacedChunks[P3D.Identifiers.Sprite]["radar.png"] = RadarSprites["radar_blue.png"]
@@ -127,7 +188,7 @@ end
 
 local RadarTopSprites = {}
 
-GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/frontend/sprites/radartop.p3d", RadarTopSprites, P3D.Identifiers.Sprite, "radartop.png")
+LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/frontend/sprites/radartop.p3d", RadarTopSprites, P3D.Identifiers.Sprite, "radartop.png")
 
 if Settings.RadarTopStyle == 1 then
 	-- Do Nothing
@@ -162,14 +223,27 @@ function InjectP3DModifications(filePath, modificationsKey)
 	-- Replace Chunks
 	--
 
-	for index, chunk in P3DFile:GetChunksIndexed() do
-		local replacedChunks = p3dModifications.ReplacedChunks[chunk.Identifier]
+	for index, chunk in P3DFile:GetChunksIndexed(nil, true) do
+		local RemovedChunkIndices = p3dModifications.RemovedChunkIndices
 
-		if replacedChunks ~= nil then
-			local replacementChunk = replacedChunks[chunk.Name]
+		if RemovedChunkIndices ~= nil then
 
-			if replacementChunk ~= nil then
-				P3DFile.Chunks[index] = replacementChunk
+			for _, removedChunkIndex in ipairs(RemovedChunkIndices) do
+				if index == removedChunkIndex then
+					P3DFile:RemoveChunk(index)
+				end
+			end
+		end
+
+		if p3dModifications.ReplacedChunks ~= nil then
+			local ReplacedChunks = p3dModifications.ReplacedChunks[chunk.Identifier]
+	
+			if ReplacedChunks ~= nil then
+				local replacementChunk = ReplacedChunks[chunk.Name]
+	
+				if replacementChunk ~= nil then
+					P3DFile.Chunks[index] = replacementChunk
+				end
 			end
 		end
 	end
