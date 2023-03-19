@@ -29,6 +29,15 @@ local P3DModifications =
 			[P3D.Identifiers.Sprite] = {}
 		},
 	},
+
+	Frontend_Frontend =
+	{
+		ReplacedChunks = 
+		{
+			[P3D.Identifiers.Sprite] = {}
+		},
+	},
+
 	Frontend_Ingame =
 	{
 		ReplacedChunks = 
@@ -128,10 +137,13 @@ local ErrorSprites = {}
 LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/frontend/sprites/error.p3d", ErrorSprites, P3D.Identifiers.Sprite, "error.png")
 
 if Settings.ErrorIconStyle == 1 then
-	P3DModifications["Frontend_Bootup"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pink_donut.png"]
-	P3DModifications["Frontend_Ingame"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pink_donut.png"]
+	P3DModifications["Frontend_Bootup"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pd.png"]
+	P3DModifications["Frontend_Frontend"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pd.png"]
+	P3DModifications["Frontend_Ingame"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pd.png"]
 elseif Settings.ErrorIconStyle == 2 then
-	-- TODO: Replace with Tyler's Icon
+	P3DModifications["Frontend_Bootup"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pdae.png"]
+	P3DModifications["Frontend_Frontend"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pdae.png"]
+	P3DModifications["Frontend_Ingame"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pdae.png"]
 elseif Settings.ErrorIconStyle == 3 then
 	-- Do Nothing
 end
