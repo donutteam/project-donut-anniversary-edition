@@ -36,10 +36,18 @@ local P3DModifications =
 						[P3D.Identifiers.Sprite] = {}
 					},
 			},
-		
+
 		Map_L1_TERRA =
 			{
-				ReplacedChunks = 
+				ReplacedChunks =
+					{
+						[P3D.Identifiers.Texture] = {}
+					},
+			},
+
+		Map_L1_R6 =
+			{
+				ReplacedChunks =
 					{
 						[P3D.Identifiers.Texture] = {}
 					},
@@ -66,6 +74,36 @@ end
 --
 -- Level Theme Setting
 --
+
+if Settings.LevelTheme == 2 then
+	local Textures = {}
+
+	GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/textures/level-themes/autumn.p3d", Textures, P3D.Identifiers.Texture)
+
+	for textureName, texture in pairs(Textures) do
+		P3DModifications.Map_L1_TERRA.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
+	end
+end
+
+--
+-- Project Donut Billboard
+--
+
+local BillboardSignTextures = {}
+
+GetNamedChunksFromP3D(GetModPath() .. "/Resources/art/textures/billboard-signs.p3d", BillboardSignTextures, P3D.Identifiers.Texture)
+
+local DontEatBeefTexture = BillboardSignTextures["project_donut.png"]:Clone()
+
+DontEatBeefTexture.Name = "Don't eat beef.bmp"
+
+P3DModifications["Map_L1_R6"].ReplacedChunks[P3D.Identifiers.Texture]["Don't eat beef.bmp"] = DontEatBeefTexture
+
+local EatDeerTexture = BillboardSignTextures["project_donut.png"]:Clone()
+
+EatDeerTexture.Name = "Eat deer.bmp"
+
+P3DModifications["Map_L1_R6"].ReplacedChunks[P3D.Identifiers.Texture]["Eat deer.bmp"] = EatDeerTexture
 
 --
 -- Radar Style Setting
@@ -123,7 +161,7 @@ function InjectP3DModifications(filePath, modificationsKey)
 	--
 	-- Replace Chunks
 	--
-	
+
 	for index, chunk in P3DFile:GetChunksIndexed() do
 		local replacedChunks = p3dModifications.ReplacedChunks[chunk.Identifier]
 
