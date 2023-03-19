@@ -34,9 +34,11 @@ Game.SelectMission("m7")
 	Game.CloseStage()
 
 	Game.AddStage()
+		local StageTime = ({ 180, 112 })[ Settings.MissionDifficulty ]
+
 		Game.SetHUDIcon("mansion")
 		Game.SetStageMessageIndex(102)
-		Game.SetStageTime(112)
+		Game.SetStageTime(StageTime)
 
 		Game.SetMaxTraffic(5)
 
