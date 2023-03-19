@@ -11,15 +11,15 @@ Game.SelectMission("m7")
 	Game.AddStage(0)
 		Game.RESET_TO_HERE()
 
-		Game.SetStageMessageIndex(12)
+		Game.SetStageMessageIndex(101)
 		Game.SetStageTime(10)
 
 		Game.PlacePlayerCar("current", "m7_car_start")
 
 		Game.AddStageVehicle("smithalt","pd_smithers_carstart","race","Missions\\level01\\M7race.con",  "smithers")
+		Game.AddStageVehicle("cLimo",   "m7_bart_carstart",    "race","Missions\\level01\\M7race2.con", "apu")
 		Game.AddStageVehicle("cVan",    "m7_surv_carstart",    "race","Missions\\level01\\M7race3.con", "jimbo")
 		Game.AddStageVehicle("cDonut",  "m7_moleman_carstart", "race","Missions\\level01\\M7race4.con", "moleman")
-		Game.AddStageVehicle("cLimo",   "m7_bart_carstart",    "race","Missions\\level01\\M7race2.con", "apu")
 
 		Game.NoTrafficForStage()
 
@@ -35,7 +35,7 @@ Game.SelectMission("m7")
 
 	Game.AddStage()
 		Game.SetHUDIcon("mansion")
-		Game.SetStageMessageIndex(18)
+		Game.SetStageMessageIndex(102)
 		Game.SetStageTime(112)
 
 		Game.SetMaxTraffic(5)
@@ -61,9 +61,9 @@ Game.SelectMission("m7")
 		Game.CloseCondition()
 		
 		Game.ActivateVehicle("smithalt", "NULL", "race")
-		Game.ActivateVehicle("cVan", "NULL", "race")
-		Game.ActivateVehicle("cDonut", "NULL", "race")
-		Game.ActivateVehicle("cLimo", "NULL", "race")
+		Game.ActivateVehicle("cLimo",    "NULL", "race")
+		Game.ActivateVehicle("cVan",     "NULL", "race")
+		Game.ActivateVehicle("cDonut",   "NULL", "race")
 		
 		Game.StartCountdown("count")
 			Game.AddToCountdownSequence("3", 1000)
@@ -95,7 +95,7 @@ Game.SelectMission("m7")
 
 	Game.AddStage()
 		Game.SetHUDIcon("burns")
-		Game.SetStageMessageIndex(19)
+		Game.SetStageMessageIndex(103)
 
 		Game.SetMaxTraffic(2)
 

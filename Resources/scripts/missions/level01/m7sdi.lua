@@ -14,7 +14,7 @@ Game.SelectMission("m7sd")
 
 	Game.AddStage()
 		Game.SetHUDIcon("pwrplant")
-		Game.SetStageMessageIndex(8)
+		Game.SetStageMessageIndex(0)
 
 		Game.SetMaxTraffic(2)
 
@@ -29,7 +29,7 @@ Game.SelectMission("m7sd")
 		Game.RESET_TO_HERE()
 
 		Game.SetHUDIcon("carl")
-		Game.SetStageMessageIndex(159)
+		Game.SetStageMessageIndex(1)
 
 		Game.AddObjective("talkto")
 			Game.AddNPC("carl","m7_carl_sd")
