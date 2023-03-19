@@ -6,10 +6,12 @@ Output(OriginalSoundScript)
 
 local SoundResources =
 {
+	"P_HitByW_Lor_marge.ogg",
 	"P_HitByW_Lor_ohone.ogg",
 	"P_HitByW_Lor_ohthree.ogg",
 	"P_HitByW_Lor_ohtwo.ogg",
 	"P_HitByW_Lor_ow.ogg",
+	"P_HitByW_Lor_police.ogg",
 	"W_Idlereply_Lor_dense.ogg",
 	"W_Idlereply_Lor_intro.ogg",
 	"W_Idlereply_Lor_spiders.ogg",	

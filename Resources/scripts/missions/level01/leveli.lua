@@ -176,6 +176,15 @@ Game.AddAmbientCharacter("moe", "ambient_moe", 1.3);
 	Game.AddAmbientNPCWaypoint("moe", "moe_walk1");
 	Game.AddAmbientNPCWaypoint("moe", "moe_walk2");
 	Game.AddAmbientNPCWaypoint("moe", "moe_walk1");
+
+Game.AddAmbientCharacter("loren", "ambient_loren", 1.3);
+	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk1");
+	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk2");
+	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk3");
+	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk4");
+	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk3");
+	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk2");
+	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk1");
 	
 Game.AddPurchaseCarReward("gil", "gil", "npd", "gil_loc", 1.3, "gil_car");
 	Game.AddPurchaseCarNPCWaypoint("gil", "gil_walk1");

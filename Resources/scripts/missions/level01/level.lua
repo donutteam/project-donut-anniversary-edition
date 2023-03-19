@@ -31,6 +31,7 @@ Game.LoadP3DFile("art\\cars\\schoolbu.p3d")
 Game.LoadP3DFile("art\\chars\\homer_kickwave.p3d")
 Game.LoadP3DFile("art\\chars\\homer_electrocuted.p3d")
 
+Game.LoadP3DFile("art\\locators\\level01\\ambient-characters.p3d")
 Game.LoadP3DFile("art\\locators\\level01\\wasps.p3d")
 
 Game.LoadP3DFile("art\\missions\\generic\\missgen.p3d")
