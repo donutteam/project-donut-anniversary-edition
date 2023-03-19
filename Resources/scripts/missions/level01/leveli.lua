@@ -46,7 +46,7 @@ Game.AddNPCCharacterBonusMission("nelson", "npd", "sr2_nelson_sd", "sr2", "check
 Game.AddNPCCharacterBonusMission("ralph", "npd", "sr3_ralph_sd", "sr3", "checkered", "intro", 0, "checkeredfinish");
 	Game.SetBonusMissionDialoguePos("sr3","sr3_player","sr3_ralph_sd","level1_carstart");
 
-	Game.SetConversationCam(0, "pc_far", "sr3");	
+	Game.SetConversationCam(0, "pc_far", "sr3");
 	Game.SetConversationCam(1, "npc_far", "sr3");
 
 	Game.ClearAmbientAnimations("sr3");

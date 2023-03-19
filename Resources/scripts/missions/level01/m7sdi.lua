@@ -1,5 +1,5 @@
 Game.SelectMission("m7sd")
-Game.SetAnimatedCameraName("mission7camShape")
+	Game.SetAnimatedCameraName("mission7camShape")
 	Game.SetAnimCamMulticontName("mission7cam")
 	Game.SetMissionStartCameraName("mission7camShape")
 	Game.SetMissionStartMulticontName("mission7cam")
@@ -56,8 +56,6 @@ Game.SetAnimatedCameraName("mission7camShape")
 			Game.AddAmbientPcAnimation("dialogue_hands_in_air")
 			Game.AddAmbientPcAnimation("none")
 			Game.AddAmbientPcAnimation("dialogue_shaking_fist")
-
-			-- Game.SetCamBestSide("m7_bestside")
 
 			Game.SetDialogueInfo("homer","carl","adventure",0)
 
