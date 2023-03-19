@@ -215,6 +215,36 @@ elseif Settings.RadarTopStyle == 3 then
 end
 
 --
+-- Remove Frontend TV Screen
+--
+
+if not Settings.ShowFrontendTVOverlay then
+	local BlankSprites = {}
+
+	LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/frontend/sprites/blank.p3d", BlankSprites, P3D.Identifiers.Sprite)
+
+	local BlankSprite = BlankSprites["blank.png"]
+
+	local TVFrameSprite = BlankSprite:Clone()
+
+	TVFrameSprite.Name = "tvframe.png"
+
+	P3DModifications["Frontend_Frontend"].ReplacedChunks[P3D.Identifiers.Sprite]["tvframe.png"] = TVFrameSprite
+
+	local TVGlass1Sprite = BlankSprite:Clone()
+
+	TVGlass1Sprite.Name = "tvglass1.png"
+
+	P3DModifications["Frontend_Frontend"].ReplacedChunks[P3D.Identifiers.Sprite]["tvglass1.png"] = TVGlass1Sprite
+
+	local TVGlass2Sprite = BlankSprite:Clone()
+
+	TVGlass2Sprite.Name = "tvglass2.png"
+
+	P3DModifications["Frontend_Frontend"].ReplacedChunks[P3D.Identifiers.Sprite]["tvglass2.png"] = TVGlass2Sprite
+end
+
+--
 -- Global Functions
 --
 
