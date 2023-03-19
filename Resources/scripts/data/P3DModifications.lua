@@ -39,6 +39,10 @@ local P3DModifications =
 
 	Map_L1_TERRA =
 	{
+		AdditionalFiles =
+		{
+			GetModPath() .. "/Resources/art/locators/cards.p3d",
+		},
 		ReplacedChunks =
 		{
 			[P3D.Identifiers.Texture] = {}
@@ -244,6 +248,20 @@ function InjectP3DModifications(filePath, modificationsKey)
 				if replacementChunk ~= nil then
 					P3DFile.Chunks[index] = replacementChunk
 				end
+			end
+		end
+	end
+
+	--
+	-- Append Additional File Chunks
+	--
+
+	if p3dModifications.AdditionalFiles ~= nil then
+		for _, additionalFilePath in ipairs(p3dModifications.AdditionalFiles) do
+			local AdditionalP3DFile = P3D.P3DFile(additionalFilePath)
+
+			for _, chunk in AdditionalP3DFile:GetChunksIndexed(nil, true) do
+				P3DFile:AddChunk(chunk)
 			end
 		end
 	end
