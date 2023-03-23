@@ -46,6 +46,15 @@ local P3DModifications =
 		},
 	},
 
+	Map_L1_SR1P =
+	{
+		RemovedChunkIndices =
+		{
+			-- l1_startline_Shape (Inst Stat Phys)
+			20,
+		},
+	},
+
 	Map_L1_TERRA =
 	{
 		AdditionalFiles =
@@ -273,9 +282,10 @@ function InjectP3DModifications(filePath, modificationsKey)
 		local RemovedChunkIndices = p3dModifications.RemovedChunkIndices
 
 		if RemovedChunkIndices ~= nil then
-
 			for _, removedChunkIndex in ipairs(RemovedChunkIndices) do
-				if index == removedChunkIndex then
+				local actualChunkIndex = index - 1
+
+				if actualChunkIndex == removedChunkIndex then
 					P3DFile:RemoveChunk(index)
 				end
 			end
