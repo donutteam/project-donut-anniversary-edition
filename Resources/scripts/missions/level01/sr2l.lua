@@ -1,4 +1,4 @@
-Game.LoadDisposableCar("art\\cars\\honor_v.p3d","honor_v","AI")
+Game.LoadDisposableCar("art\\cars\\light_v.p3d","light_v","AI")
 
 Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\race.p3d")
 

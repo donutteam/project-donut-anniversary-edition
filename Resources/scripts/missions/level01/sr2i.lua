@@ -28,15 +28,15 @@ Game.SelectMission("sr2")
 		Game.AddToCountdownSequence("1",900)
 		Game.AddToCountdownSequence("GO",400)
 
-		Game.AddStageVehicle("honor_v","sr2_AI_carstart2","race","Missions\\level01\\sr2_1st.con","bart")
+		Game.AddStageVehicle("light_v","sr2_AI_carstart2","race","missions\\level01\\sr2\\light_v.con","bart")
 		Game.SetVehicleAIParams("honor_v",-51,-50)
 		Game.SetStageAIRaceCatchupParams("honor_v",80,0.6,1.0,2.0)
 		
-		Game.AddStageVehicle("minivanA","sr2_AI_carstart3","race","Missions\\level01\\sr2_3rd.con")
+		Game.AddStageVehicle("minivanA","sr2_AI_carstart3","race","missions\\level01\\sr2\\minivanA.con")
 		Game.SetStageAIRaceCatchupParams("minivanA",80,0.6,0.9,1.50)
 		Game.SetVehicleAIParams("minivanA",-51,-50)
 
-		Game.AddStageVehicle("schoolbu","sr2_AI_carstart4","race","Missions\\level01\\sr2_4th.con")
+		Game.AddStageVehicle("schoolbu","sr2_AI_carstart4","race","missions\\level01\\sr2\\schoolbu.con")
 		Game.SetStageAIRaceCatchupParams("schoolbu",80,0.6,0.9,1.50)
 		Game.SetVehicleAIParams("schoolbu",-51,-50)
 
