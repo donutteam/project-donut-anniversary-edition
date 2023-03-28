@@ -4,17 +4,22 @@ local OriginalSoundScript = ReadFile("/GameData/sound/scripts/" .. FileName)
 
 Output(OriginalSoundScript)
 
+-- Note: No longer including file extensions here
+--  	It now always outputs ".rsd" which will get redirected by the hack
+--  	To whatever format is actually provided (OGG in this case)
+--
+--	This just makes the daSoundResourceData names less gross
 local SoundResources =
 {
-	"P_HitByW_Lor_marge.ogg",
-	"P_HitByW_Lor_ohone.ogg",
-	"P_HitByW_Lor_ohthree.ogg",
-	"P_HitByW_Lor_ohtwo.ogg",
-	"P_HitByW_Lor_ow.ogg",
-	"P_HitByW_Lor_police.ogg",
-	"W_Idlereply_Lor_dense.ogg",
-	"W_Idlereply_Lor_intro.ogg",
-	"W_Idlereply_Lor_spiders.ogg",	
+	"P_HitByW_Lor_marge",
+	"P_HitByW_Lor_ohone",
+	"P_HitByW_Lor_ohthree",
+	"P_HitByW_Lor_ohtwo",
+	"P_HitByW_Lor_ow",
+	"P_HitByW_Lor_police",
+	"W_Idlereply_Lor_dense",
+	"W_Idlereply_Lor_intro",
+	"W_Idlereply_Lor_spiders",	
 }
 
 for index = 1, #SoundResources do
@@ -24,7 +29,7 @@ for index = 1, #SoundResources do
 	[[
 		create daSoundResourceData named ]] .. SoundResource .. [[
 		{
-			AddFilename ( "sound/dialog/]] .. SoundResource .. [[" 1.000000 )
+			AddFilename ( "sound/dialog/]] .. SoundResource .. [[.rsd" 1.000000 )
 			SetStreaming ( true )
 		}
 	]])
