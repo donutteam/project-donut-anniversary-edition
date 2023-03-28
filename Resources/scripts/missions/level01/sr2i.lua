@@ -1,0 +1,91 @@
+Game.SelectMission("sr2")
+	Game.SetAnimatedCameraName("race2camShape")
+	Game.SetAnimCamMulticontName("race2cam")
+
+	Game.SetMissionResetPlayerInCar("sr2_carstart")
+	Game.SetDynaLoadData("l1z4.p3d;l1r3.p3d;l1z3.p3d;")
+
+	Game.UsePedGroup(4)
+
+	Game.StreetRacePropsLoad("l1_sr2p.p3d;")
+	Game.StreetRacePropsUnload("l1_sr2p.p3d:")
+
+	Game.AddStage(0)
+		Game.RESET_TO_HERE()
+		
+		Game.SetHUDIcon("race")
+		Game.SetStageMessageIndex(0)
+		Game.SetStageTime(210)
+
+		Game.DisableHitAndRun()
+		Game.PlacePlayerCar("current","sr2_carstart")
+		Game.PutMFPlayerInCar()
+
+		Game.StartCountdown("count")
+		Game.AddToCountdownSequence("3",800)
+		Game.AddToCountdownSequence("2",600)
+		Game.AddToCountdownSequence("PSYCHE",500)
+		Game.AddToCountdownSequence("1",900)
+		Game.AddToCountdownSequence("GO",400)
+
+		Game.AddStageVehicle("honor_v","sr2_AI_carstart2","race","Missions\\level01\\sr2_1st.con","bart")
+		Game.SetVehicleAIParams("honor_v",-51,-50)
+		Game.SetStageAIRaceCatchupParams("honor_v",80,0.6,1.0,2.0)
+		
+		Game.AddStageVehicle("minivanA","sr2_AI_carstart3","race","Missions\\level01\\sr2_3rd.con")
+		Game.SetStageAIRaceCatchupParams("minivanA",80,0.6,0.9,1.50)
+		Game.SetVehicleAIParams("minivanA",-51,-50)
+
+		Game.AddStageVehicle("schoolbu","sr2_AI_carstart4","race","Missions\\level01\\sr2_4th.con")
+		Game.SetStageAIRaceCatchupParams("schoolbu",80,0.6,0.9,1.50)
+		Game.SetVehicleAIParams("schoolbu",-51,-50)
+
+		Game.AddStageWaypoint("sr2_waypoint1")
+		Game.AddStageWaypoint("sr2_waypoint2")
+		Game.AddStageWaypoint("sr2_waypoint3")
+		Game.AddStageWaypoint("sr2_waypoint4")
+		Game.AddStageWaypoint("sr2_waypoint4b")
+		Game.AddStageWaypoint("sr2_waypoint5")
+		Game.AddStageWaypoint("sr2_waypoint6")
+		Game.AddStageWaypoint("sr2_waypoint7")
+		
+		Game.AddObjective("race","neither")
+			Game.AddNPC("patty","sr2_patty")
+			Game.AddNPC("selma","sr2_selma")
+			Game.AddCollectible("sr2_waypoint1","carsphere")
+			Game.AddCollectible("sr2_waypoint2","carsphere")
+			Game.AddCollectible("sr2_waypoint3","carsphere")
+			Game.AddCollectible("sr2_waypoint4","carsphere")
+			Game.AddCollectible("sr2_waypoint5","carsphere")
+			Game.AddCollectible("sr2_waypoint6","carsphere")
+			Game.AddCollectible("sr2_waypoint8","carsphere")
+			Game.SetCollectibleEffect("wrench_collect")
+			Game.SetRaceLaps(5)
+		Game.CloseObjective()
+
+		Game.AddCondition("damage")
+			Game.SetCondMinHealth(0.0)
+			Game.SetCondTargetVehicle("current")
+		Game.CloseCondition()
+
+		Game.AddCondition("outofvehicle")
+			Game.SetCondTime(10000)
+		Game.CloseCondition()
+
+		Game.AddCondition("position")
+			Game.SetConditionPosition(1)
+		Game.CloseCondition()
+
+		Game.AddCondition("timeout")
+		Game.CloseCondition()
+	Game.CloseStage()
+		
+	Game.AddStage("final")
+		Game.AddObjective("dialogue")
+			Game.AddNPC("patty","sr2_patty")
+			Game.AddNPC("selma","sr2_selma")
+			Game.SetDialogueInfo("patty","homer","success",0)
+			Game.SetDialoguePositions("sr2_patty","sr2_homer","sr2_carstart")
+		Game.CloseObjective()
+	Game.CloseStage()
+Game.CloseMission()
