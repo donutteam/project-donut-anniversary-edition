@@ -52,13 +52,13 @@ Game.SelectMission("sr1")
 	Game.StreetRacePropsLoad("l1_sr1p.p3d;")
 	Game.StreetRacePropsUnload("l1_sr1p.p3d:")
 
-	DerbyStage("marage",  34, 90, "marge_v", "sr1_marge_carstart", "missions\\level01\\sr1\\marge_v.con", "m_prison", true)
+	DerbyStage("marage",  0, 90, "marge_v", "sr1_marge_carstart", "missions\\level01\\sr1\\marge_v.con", "m_prison", true)
 
-	DerbyStage("bart",    34, 90, "honor_v", "sr1_honor_carstart", "missions\\level01\\sr1\\honor_v.con", "bart")
+	DerbyStage("bart",    1, 90, "honor_v", "sr1_honor_carstart", "missions\\level01\\sr1\\honor_v.con", "bart")
 
-	DerbyStage("moleman", 34, 90, "cBone",   "sr1_bone_carstart",  "missions\\level01\\sr1\\cBone.con",   "moleman")
+	DerbyStage("moleman", 2, 90, "cBone",   "sr1_bone_carstart",  "missions\\level01\\sr1\\cBone.con",   "moleman")
  
-	DerbyStage("apu",     34, 90, "apu_v",   "sr1_plow_carstart",  "missions\\level01\\sr1\\apu_v.con",   "apu")
+	DerbyStage("apu",     3, 90, "apu_v",   "sr1_plow_carstart",  "missions\\level01\\sr1\\apu_v.con",   "apu")
 
 	Game.AddStage(4,"final")
 		Game.AddObjective("dialogue")
