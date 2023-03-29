@@ -4,12 +4,13 @@
 		"DirectoryGetEntries",
 		"Exists",
 		"GetFileExtension",
+		"GetFileName",
 		"GetModPath",
+		"GetPath",
 		"GetSettings",
 		"IsHackLoaded",
 		"Output",
 		"ReadFile",
-		"GetPath",
-		"GetFileName"
+		"Redirect"
 	]
 }
