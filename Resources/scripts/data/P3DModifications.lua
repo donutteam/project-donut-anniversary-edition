@@ -153,8 +153,6 @@ elseif Settings.ErrorIconStyle == 2 then
 	P3DModifications["Frontend_Bootup"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pdae.png"]
 	P3DModifications["Frontend_Frontend"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pdae.png"]
 	P3DModifications["Frontend_Ingame"].ReplacedChunks[P3D.Identifiers.Sprite]["error.png"] = ErrorSprites["error_pdae.png"]
-elseif Settings.ErrorIconStyle == 3 then
-	-- Do Nothing
 end
 
 --
@@ -257,7 +255,15 @@ end
 -- Global Functions
 --
 
-function InjectP3DModifications(filePath, modificationsKey)
+function InjectP3DModifications(filePath, modificationsKey, outputToGame)
+	--
+	-- Default Options
+	--
+
+	if outputToGame == nil then
+		outputToGame = true
+	end
+
 	--
 	-- Load P3D File
 	--
@@ -271,7 +277,7 @@ function InjectP3DModifications(filePath, modificationsKey)
 	local p3dModifications = P3DModifications[modificationsKey]
 
 	if p3dModifications == nil then
-		return
+		return P3DFile
 	end
 
 	--
@@ -322,5 +328,13 @@ function InjectP3DModifications(filePath, modificationsKey)
 	-- Output P3D Data
 	--
 
-	P3DFile:Output()
+	if outputToGame then
+		P3DFile:Output()
+	end
+
+	-- 
+	-- Return P3D File
+	--
+
+	return P3DFile
 end
