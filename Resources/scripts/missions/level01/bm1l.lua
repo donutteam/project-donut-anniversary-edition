@@ -5,7 +5,8 @@ Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\location\\cletushs.
 Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\cardboar.p3d")
 Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\tamacco.p3d")
 
-Game.LoadP3DFile("art\\missions\\level01\\bm1.p3d")
+Game.LoadP3DFile("art\\locators\\level01\\bm1.p3d")
+
 Game.LoadP3DFile("art\\missions\\level01\\boxexpld.p3d")
 Game.LoadP3DFile("art\\missions\\level01\\poster_t.p3d")
 Game.LoadP3DFile("art\\missions\\level01\\tomat.p3d")
