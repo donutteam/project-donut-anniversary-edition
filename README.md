@@ -5,8 +5,8 @@ It contains various new features, bug fixes and improvements over the original v
 
 We created this mod to commemorate our 10th anniversary as a modding team.
 
-# Download
+## Download
 The precompiled version of this mod can be downloaded from [Mod Bakery](https://modbakery.donutteam.com/releases/view/project-donut-anniversary-edition)
 
-# License
+## License
 [MIT](https://github.com/donutteam/project-donut-anniversary-edition/blob/main/LICENSE.md)
