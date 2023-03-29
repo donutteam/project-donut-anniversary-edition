@@ -1,6 +1,7 @@
 {
 	"Lua.diagnostics.globals": 
 	[
+		"Alert",
 		"DirectoryGetEntries",
 		"Exists",
 		"GetFileExtension",
@@ -11,6 +12,6 @@
 		"IsHackLoaded",
 		"Output",
 		"ReadFile",
-		"Redirect"
+		"Redirect",
 	]
 }

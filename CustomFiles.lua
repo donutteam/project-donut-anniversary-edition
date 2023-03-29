@@ -5,6 +5,14 @@
 Settings = GetSettings()
 
 --
+-- Settings Info Message
+--
+
+if Settings.ShowSettingsInfoMessage then
+	Alert("Project Donut: Anniversary Edition is highly configurable, we encourage you to peruse the mod's settings in the Mod Launcher at least once to customise your experience!\n\nNote: You can also turn off this message there by unchecking \"Show Settings Info Message on Startup\".")
+end
+
+--
 -- Imports
 --
 
