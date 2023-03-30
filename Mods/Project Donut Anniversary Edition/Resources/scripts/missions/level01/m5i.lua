@@ -20,7 +20,7 @@ Game.SelectMission("m5")
 		Game.SetHUDIcon("cvan_v")
 		Game.SetStageMessageIndex(102)
 
-		Game.AddStageVehicle("cVan","m5_van_carstart","NULL","special\\l1m5_van.con")
+		Game.AddStageVehicle("cVan","m5_van_carstart","NULL","gen\\l1m5_van.con")
 
 		Game.AddObjective("goto","nearest road")
 			Game.SetDestination("m5_van_start", "carsphere")

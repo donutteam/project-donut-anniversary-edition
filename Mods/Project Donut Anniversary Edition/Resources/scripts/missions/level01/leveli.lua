@@ -4,7 +4,7 @@ Game.InitLevelPlayerVehicle("famil_v", "level1_carstart", "DEFAULT")
  
 Game.AddCharacter("homer","homer")
 
-Game.CreateChaseManager(HitAndRunCarModel, "special\\hitandrun.con", 1)
+Game.CreateChaseManager(HitAndRunCarModel, "gen\\hitandrun.con", 1)
 Game.SetHitAndRunDecay(0.1)
 Game.SetNumChaseCars(Settings.HitAndRunCarCount)
 

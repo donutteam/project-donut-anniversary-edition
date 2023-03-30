@@ -75,7 +75,7 @@ Game.SelectMission("m4")
 		Game.SetStageMessageIndex(104)
 		Game.SetStageTime(10)
 
-		Game.AddStageVehicle("cVan","m4_cVan_carstart","NULL","special\\l1m4_van.con")
+		Game.AddStageVehicle("cVan","m4_cVan_carstart","NULL","gen\\l1m4_van.con")
 
 		Game.AddObjective("getin","neither")
 			Game.SetObjTargetVehicle("current")

@@ -29,16 +29,16 @@ Game.SelectMission("sr3")
 		Game.AddToCountdownSequence("1", 900)
 		Game.AddToCountdownSequence("GO", 400)
 
-		Game.AddStageVehicle("light_v","sr3_AI_carstart2","evade","special\\l1sr3_1st.con","bart")
+		Game.AddStageVehicle("light_v","sr3_AI_carstart2","evade","gen\\l1sr3_1st.con","bart")
 		Game.SetStageAIRaceCatchupParams("light_v", 100, 0.6, 1.0, 1.75)
 
-		Game.AddStageVehicle("apu_v","sr3_AI_carstart4","target`","special\\l1sr3_2nd.con","apu")
+		Game.AddStageVehicle("apu_v","sr3_AI_carstart4","target`","gen\\l1sr3_2nd.con","apu")
 		Game.SetStageAIRaceCatchupParams("apu_v", 80, 0.6, 0.9, 1.25)
 
-		Game.AddStageVehicle("hype_v","sr3_AI_carstart3","target","special\\l1sr3_3rd.con","moleman")
+		Game.AddStageVehicle("hype_v","sr3_AI_carstart3","target","gen\\l1sr3_3rd.con","moleman")
 		Game.SetStageAIRaceCatchupParams("hype_v", 80, 0.6, 0.9, 1.25)
 
-		Game.AddStageVehicle("cPolice","sr3_AI_carstart1","race","special\\l1sr3_4th.con","jimbo")
+		Game.AddStageVehicle("cPolice","sr3_AI_carstart1","race","gen\\l1sr3_4th.con","jimbo")
 		Game.SetStageAIRaceCatchupParams("cPolice", 80, 0.6, 0.9, 1.25)
 
 		Game.AddStageWaypoint("sr3_navpoint1")

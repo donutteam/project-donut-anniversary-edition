@@ -15,7 +15,7 @@ Game.SelectMission("m1")
 		Game.SetStageTime(10)
 
 		Game.AddObjective("goto", "nearest road")
-			Game.AddStageVehicle("skinn_v", "m1_skinner_place", "NULL", "special\\l1m1_skinner.con", "skinner")
+			Game.AddStageVehicle("skinn_v", "m1_skinner_place", "NULL", "gen\\l1m1_skinner.con", "skinner")
 
 			Game.SetDestination("m1_tomato","scien")
 
