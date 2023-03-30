@@ -60,6 +60,9 @@ local P3DModifications =
 		{
 			-- l1_startline_Shape (Inst Stat Phys)
 			20,
+
+			-- l1_chevronanim_Shape (Anim Dyna Phys)
+			21,
 		},
 	},
 
