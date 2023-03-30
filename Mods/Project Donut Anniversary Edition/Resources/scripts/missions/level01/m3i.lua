@@ -47,7 +47,7 @@ Game.SelectMission("m3")
 		Game.SetStageMessageIndex(103)
 		Game.SetStageTime(32)
 
-		Game.AddStageVehicle("smith_v", "m3_smithers_carstart", "NULL", "special\\l1m3_smithers.con", "smithers")
+		Game.AddStageVehicle("smith_v", "m3_smithers_carstart", "NULL", "gen\\l1m3_smithers.con", "smithers")
 
 		Game.AddObjective("goto")
 			Game.SetDestination("m3_kwikemart", "carsphere")
@@ -106,7 +106,7 @@ Game.SelectMission("m3")
 		Game.SetHUDIcon("pwrplant")
 		Game.SetStageMessageIndex(105)
 
-		Game.AddStageVehicle("cVan", "m3_cVan_carstart", "NULL", "special\\l1m3_van.con", "jimbo")
+		Game.AddStageVehicle("cVan", "m3_cVan_carstart", "NULL", "gen\\l1m3_van.con", "jimbo")
 
 		Game.AddObjective("goto")
 			Game.SetDestination("m3_pwrplant", "carsphere")

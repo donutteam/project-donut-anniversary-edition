@@ -16,7 +16,7 @@ Game.SelectMission("m5sd")
 		Game.SetMaxTraffic(2)
 
 		Game.AddObjective("goto")
-			Game.AddStageVehicle("cVan","m5_van_carstart","NULL","special\\l1m5_van.con")
+			Game.AddStageVehicle("cVan","m5_van_carstart","NULL","gen\\l1m5_van.con")
 			Game.SetDestination("m2_simpsonhouse_sd","carsphere")
 			Game.SetCollectibleEffect("wrench_collect")
 		Game.CloseObjective()

@@ -154,7 +154,7 @@ Game.SelectMission("m2")
 		Game.SetStageMessageIndex(108)
 		Game.SetStageTime(({ 30, 15 })[Settings.MissionDifficulty])
 
-		Game.AddStageVehicle("plowk_v","m2_barney_carstart","NULL","special\\l1m2_barney.con", "barney")
+		Game.AddStageVehicle("plowk_v","m2_barney_carstart","NULL","gen\\l1m2_barney.con", "barney")
 
 		Game.AddObjective("goto","both")
 			Game.SetDestination("m2_object6","inhaler")

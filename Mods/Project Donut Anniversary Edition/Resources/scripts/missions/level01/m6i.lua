@@ -18,7 +18,7 @@ Game.SelectMission("m6")
 
 		Game.SetHUDIcon("bonestor")
 		Game.SetStageMessageIndex(101)
-		Game.AddStageVehicle("cBone","m6_cBone_carstart","target","special\\l1m6_bonestorm.con", "jimbo")
+		Game.AddStageVehicle("cBone","m6_cBone_carstart","target","gen\\l1m6_bonestorm.con", "jimbo")
 
 		Game.SetVehicleAIParams("cBone", -10, -9)
 
@@ -59,7 +59,7 @@ Game.SelectMission("m6")
 		Game.SetHUDIcon("simpsons")
 		Game.SetStageMessageIndex(102)
 
-		Game.AddStageVehicle("wiggu_v","m6_wiggu_v_carstart","NULL","special\\l1m6_wiggum.con", "wiggum")
+		Game.AddStageVehicle("wiggu_v","m6_wiggu_v_carstart","NULL","gen\\l1m6_wiggum.con", "wiggum")
 
 		Game.AddObjective("goto", "both")
 			Game.SetDestination("m2_simpsonhouse_sd", "carsphere")

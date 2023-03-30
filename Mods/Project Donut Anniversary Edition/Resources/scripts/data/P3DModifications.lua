@@ -416,17 +416,25 @@ end
 -- Project Donut Billboard
 --
 
+local BillboardSignTextureName
+
+if Settings.LevelTheme ~= 4 then
+	BillboardSignTextureName = "project_donut.png"
+else
+	BillboardSignTextureName = "project_donut_winter.png"
+end
+
 local BillboardSignTextures = {}
 
 LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/textures/billboard-signs.p3d", BillboardSignTextures, P3D.Identifiers.Texture)
 
-local DontEatBeefTexture = BillboardSignTextures["project_donut.png"]:Clone()
+local DontEatBeefTexture = BillboardSignTextures[BillboardSignTextureName]:Clone()
 
 DontEatBeefTexture.Name = "Don't eat beef.bmp"
 
 P3DModifications["Map_L1_R6"].ReplacedChunks[P3D.Identifiers.Texture]["Don't eat beef.bmp"] = DontEatBeefTexture
 
-local EatDeerTexture = BillboardSignTextures["project_donut.png"]:Clone()
+local EatDeerTexture = BillboardSignTextures[BillboardSignTextureName]:Clone()
 
 EatDeerTexture.Name = "Eat deer.bmp"
 
