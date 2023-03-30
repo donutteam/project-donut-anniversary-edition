@@ -177,6 +177,25 @@ Game.AddAmbientCharacter("moe", "ambient_moe", 1.3);
 	Game.AddAmbientNPCWaypoint("moe", "moe_walk2");
 	Game.AddAmbientNPCWaypoint("moe", "moe_walk1");
 
+Game.AddAmbientCharacter("addy", "ambient_addy", 1.3);
+	Game.AddAmbientNPCWaypoint("addy", "ambient_addy_walk1");
+	Game.AddAmbientNPCWaypoint("addy", "ambient_addy_walk2");
+
+Game.AddAmbientCharacter("jake", "ambient_jake", 1.3);
+	Game.AddAmbientNPCWaypoint("jake", "ambient_jake_walk1");
+	Game.AddAmbientNPCWaypoint("jake", "ambient_jake_walk2");
+	Game.AddAmbientNPCWaypoint("jake", "ambient_jake_walk3");
+
+-- Game.AddAmbientCharacter("jeff", "ambient_jeff", 1.3);
+--	Game.AddAmbientNPCWaypoint("jeff", "ambient_jeff_walk1");
+--	Game.AddAmbientNPCWaypoint("jeff", "ambient_jeff_walk2");
+
+Game.AddAmbientCharacter("kenny", "ambient_kenny", 1.3);
+	Game.AddAmbientNPCWaypoint("kenny", "ambient_kenny_walk1");
+	Game.AddAmbientNPCWaypoint("kenny", "ambient_kenny_walk2");
+	Game.AddAmbientNPCWaypoint("kenny", "ambient_kenny_walk3");
+	Game.AddAmbientNPCWaypoint("kenny", "ambient_kenny_walk4");
+
 Game.AddAmbientCharacter("loren", "ambient_loren", 1.3);
 	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk1");
 	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk2");
@@ -185,6 +204,11 @@ Game.AddAmbientCharacter("loren", "ambient_loren", 1.3);
 	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk3");
 	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk2");
 	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk1");
+
+Game.AddAmbientCharacter("sol", "ambient_sol", 1.3);
+	Game.AddAmbientNPCWaypoint("sol", "ambient_sol_walk1");
+	Game.AddAmbientNPCWaypoint("sol", "ambient_sol_walk2");
+	Game.AddAmbientNPCWaypoint("sol", "ambient_sol_walk3");
 	
 Game.AddPurchaseCarReward("gil", "gil", "npd", "gil_loc", 1.3, "gil_car");
 	Game.AddPurchaseCarNPCWaypoint("gil", "gil_walk1");
