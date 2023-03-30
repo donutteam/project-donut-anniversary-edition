@@ -20,7 +20,7 @@ Game.SelectMission("m0")
 
 		Game.SetHUDIcon("kwike")
 		Game.SetStageMessageIndex(102)
-		Game.SetStageTime(20)
+		Game.SetStageTime(({ 45, 15 })[Settings.MissionDifficulty])
 
 		Game.AddObjective("goto")
 			Game.SetDestination("m0_kwikemart","carsphere")
