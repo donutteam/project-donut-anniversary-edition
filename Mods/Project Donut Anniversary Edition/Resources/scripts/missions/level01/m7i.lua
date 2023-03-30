@@ -16,10 +16,10 @@ Game.SelectMission("m7")
 
 		Game.PlacePlayerCar("current", "m7_car_start")
 
-		Game.AddStageVehicle("smithalt","pd_smithers_carstart","race","Missions\\level01\\M7race.con",  "smithers")
-		Game.AddStageVehicle("cLimo",   "m7_bart_carstart",    "race","Missions\\level01\\M7race2.con", "apu")
-		Game.AddStageVehicle("cVan",    "m7_surv_carstart",    "race","Missions\\level01\\M7race3.con", "jimbo")
-		Game.AddStageVehicle("cDonut",  "m7_moleman_carstart", "race","Missions\\level01\\M7race4.con", "moleman")
+		Game.AddStageVehicle("smithalt","pd_smithers_carstart","race","gen\\l1m7_car1.con",  "smithers")
+		Game.AddStageVehicle("cLimo",   "m7_bart_carstart",    "race","gen\\l1m7_car2.con", "apu")
+		Game.AddStageVehicle("cVan",    "m7_surv_carstart",    "race","gen\\l1m7_car3.con", "jimbo")
+		Game.AddStageVehicle("cDonut",  "m7_moleman_carstart", "race","gen\\l1m7_car4.con", "moleman")
 
 		Game.NoTrafficForStage()
 
