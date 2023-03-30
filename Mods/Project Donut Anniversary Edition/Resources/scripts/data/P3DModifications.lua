@@ -275,6 +275,20 @@ if not Settings.ShowFrontendTVOverlay then
 end
 
 --
+-- Skybox Setting
+--
+
+if Settings.Skybox == 2 then
+	local Textures = {}
+
+	LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/textures/skyboxes/level1_level4_hybrid.p3d", Textures, P3D.Identifiers.Texture)
+
+	for textureName, texture in pairs(Textures) do
+		P3DModifications.Map_L1_TERRA.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
+	end
+end
+
+--
 -- Global Functions
 --
 
