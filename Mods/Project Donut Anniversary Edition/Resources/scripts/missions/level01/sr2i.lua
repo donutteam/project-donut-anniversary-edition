@@ -29,8 +29,8 @@ Game.SelectMission("sr2")
 		Game.AddToCountdownSequence("GO",400)
 
 		Game.AddStageVehicle("light_v","sr2_AI_carstart2","race","missions\\level01\\sr2\\light_v.con","bart")
-		Game.SetVehicleAIParams("honor_v",-51,-50)
-		Game.SetStageAIRaceCatchupParams("honor_v",80,0.6,1.0,2.0)
+		Game.SetVehicleAIParams("light_v",-51,-50)
+		Game.SetStageAIRaceCatchupParams("light_v",80,0.6,1.0,2.0)
 		
 		Game.AddStageVehicle("minivanA","sr2_AI_carstart3","race","missions\\level01\\sr2\\minivanA.con")
 		Game.SetStageAIRaceCatchupParams("minivanA",80,0.6,0.9,1.50)
