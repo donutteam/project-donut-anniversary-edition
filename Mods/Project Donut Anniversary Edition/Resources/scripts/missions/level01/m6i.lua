@@ -13,9 +13,12 @@ Game.SelectMission("m6")
 	Game.AddStage()
 		Game.RESET_TO_HERE()
 
+		local NumberToCollect = ({ 11, 22 })[Settings.MissionDifficulty]
+		local TimePerItem = ({ 15, 9 })[Settings.MissionDifficulty]
+
 		Game.SetHUDIcon("bonestor")
 		Game.SetStageMessageIndex(101)
-		Game.AddStageVehicle("cBone","m6_cBone_carstart","target","Missions\\level01\\M6dump.con", "jimbo")
+		Game.AddStageVehicle("cBone","m6_cBone_carstart","target","special\\l1m6_bonestorm.con", "jimbo")
 
 		Game.SetVehicleAIParams("cBone", -10, -9)
 
@@ -23,15 +26,15 @@ Game.SelectMission("m6")
 		Game.AddStageWaypoint("m6_cBone_path2")
 		Game.AddStageWaypoint("m6_cBone_path3")
 
-		Game.SetStageTime(300)
+		Game.SetStageTime(TimePerItem * NumberToCollect)
 
 		Game.AddObjective("dump","neither")
 			Game.AddNPC("marge", "m6_marge_hide")
 
 			Game.SetObjTargetVehicle("cBone")
 
-			for i = 1, 25 do
-				Game.AddCollectible("m6_bonestorm1" .. i, "bonestorm")
+			for i = 1, NumberToCollect do
+				Game.AddCollectible("m6_bonestorm" .. i, "bonestorm")
 			end
 
 			Game.SetCollectibleEffect("bonestorm_explosion")
@@ -56,7 +59,7 @@ Game.SelectMission("m6")
 		Game.SetHUDIcon("simpsons")
 		Game.SetStageMessageIndex(102)
 
-		Game.AddStageVehicle("wiggu_v","m6_wiggu_v_carstart","NULL","wiggu_v.con", "wiggum")
+		Game.AddStageVehicle("wiggu_v","m6_wiggu_v_carstart","NULL","special\\l1m6_wiggum.con", "wiggum")
 
 		Game.AddObjective("goto", "both")
 			Game.SetDestination("m2_simpsonhouse_sd", "carsphere")
@@ -78,13 +81,13 @@ Game.SelectMission("m6")
 	Game.AddStage()
 		Game.SetHUDIcon("wiggu_v")
 		Game.SetStageMessageIndex(103)
-		Game.SetStageTime(55)
+		Game.SetStageTime(({ 80, 55 })[Settings.MissionDifficulty])
 
 		Game.ActivateVehicle("wiggu_v","NULL","chase")
 
 		Game.AddObjective("losetail")
 			Game.SetObjTargetVehicle("wiggu_v")
-			Game.SetObjDistance(350)
+			Game.SetObjDistance(({ 200, 300 })[Settings.MissionDifficulty])
 		Game.CloseObjective()
 
 		Game.AddCondition("damage")
