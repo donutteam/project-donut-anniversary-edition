@@ -205,9 +205,9 @@ Game.AddAmbientCharacter("loren", "ambient_loren", 1.3)
 	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk2")
 	Game.AddAmbientNPCWaypoint("loren", "ambient_loren_walk1")
 
-Game.AddAmbientCharacter("sol", "ambient_sol", 1.3)
-	Game.AddAmbientNPCWaypoint("sol", "ambient_sol_walk1")
-	Game.AddAmbientNPCWaypoint("sol", "ambient_sol_walk2")
+Game.AddAmbientCharacter("soleil", "ambient_sol", 1.3)
+	Game.AddAmbientNPCWaypoint("soleil", "ambient_sol_walk1")
+	Game.AddAmbientNPCWaypoint("soleil", "ambient_sol_walk2")
 	
 Game.AddPurchaseCarReward("gil", "gil", "npd", "gil_loc", 1.3, "gil_car")
 	Game.AddPurchaseCarNPCWaypoint("gil", "gil_walk1")
