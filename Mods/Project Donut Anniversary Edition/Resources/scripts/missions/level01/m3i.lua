@@ -47,7 +47,7 @@ Game.SelectMission("m3")
 		Game.SetStageMessageIndex(103)
 		Game.SetStageTime(32)
 
-		Game.AddStageVehicle("smith_v", "m3_smithers_carstart", "NULL", "Missions\\level01\\M3dest.con", "smithers")
+		Game.AddStageVehicle("smith_v", "m3_smithers_carstart", "NULL", "special\\l1m3_smithers.con", "smithers")
 
 		Game.AddObjective("goto")
 			Game.SetDestination("m3_kwikemart", "carsphere")
@@ -76,8 +76,8 @@ Game.SelectMission("m3")
 		Game.ActivateVehicle("smith_v","NULL","target")
 		Game.SetVehicleAIParams("smith_v", -10, -9)
 
-		Game.AddStageWaypoint("m4_smithers_path1")
-		Game.AddStageWaypoint("m4_smithers_path2")
+		Game.AddStageWaypoint("m3_smithers_path1")
+		Game.AddStageWaypoint("m3_smithers_path2")
 
 		Game.AddObjective("destroy","neither")
 			Game.SetObjTargetVehicle("smith_v")
@@ -126,7 +126,7 @@ Game.SelectMission("m3")
 	Game.AddStage()
 		Game.SetHUDIcon("cvan_v")
 		Game.SetStageMessageIndex(106)
-		Game.SetStageTime(40)
+		Game.SetStageTime(({ 80, 40 })[Settings.MissionDifficulty])
 
 		Game.ActivateVehicle("cVan","NULL","chase")
 
@@ -151,20 +151,25 @@ Game.SelectMission("m3")
 	Game.AddStage("final")
 		Game.SetHUDIcon("pwrplant")
 		Game.SetStageMessageIndex(105)
+		Game.SetStageTime(({ 130, 65 })[Settings.MissionDifficulty])
 
 		Game.AddObjective("goto")
-			Game.SetDestination("m3_pwrplant", "carsphere")
+			Game.SetDestination("m3_powerplant", "carsphere")
 			Game.SetCollectibleEffect("wrench_collect")
 		Game.CloseObjective()
-
-		Game.AddCondition("outofvehicle")
-			Game.SetCondTime(10000)
-		Game.CloseCondition()
 
 		Game.AddCondition("damage")
 			Game.SetCondMinHealth(0.0)
 			Game.SetCondTargetVehicle("current")
 		Game.CloseCondition()
+
+		Game.AddCondition("outofvehicle")
+			Game.SetCondTime(10000)
+		Game.CloseCondition()
+
+		Game.AddCondition("timeout")
+		Game.CloseCondition()
+
 	Game.CloseStage()
 Game.CloseMission()
 

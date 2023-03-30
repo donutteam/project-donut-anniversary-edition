@@ -1,10 +1,11 @@
--- SKinner AI L1M1
+ -- Easy to Destroy
+-- Global AI vehicle file
 
-Game.SetMass(1000.0)
-Game.SetGasScale(8)
-Game.SetSlipGasScale(8)
-Game.SetBrakeScale(6.0)
-Game.SetTopSpeedKmh(80)
+Game.SetMass(1500.0)
+Game.SetGasScale(({ 5.0, 6.0 })[Settings.MissionDifficulty])
+Game.SetSlipGasScale(7.0)
+Game.SetBrakeScale(10.0)
+Game.SetTopSpeedKmh(({ 70.0, 80.0 })[Settings.MissionDifficulty])
 Game.SetMaxWheelTurnAngle(35.0)
 Game.SetHighSpeedSteeringDrop(0.3) -- was 1.0
 Game.SetTireGrip(30.0)
@@ -25,8 +26,6 @@ Game.SetDamperC(0.3)
 
 Game.SetSuspensionYOffset(0.0)
 
-Game.SetHitPoints(({ 0.55, 1.1 })[Settings.MissionDifficulty])
+Game.SetHitPoints(({ 2.5, 5.0 })[Settings.MissionDifficulty])
 
-Game.SetCharacterScale(0.9)
-
-Game.SetShadowAdjustments(-0.3, -0.2, -0.3, 0.0, -0.3, 0.0, -0.3, 0.0)
+Game.SetShadowAdjustments(-0.1, 0.45, -0.1, 0.0, -0.1, 0.0, -0.1, -0.35)
