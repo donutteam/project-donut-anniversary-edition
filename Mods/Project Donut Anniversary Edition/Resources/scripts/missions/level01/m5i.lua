@@ -20,7 +20,7 @@ Game.SelectMission("m5")
 		Game.SetHUDIcon("cvan_v")
 		Game.SetStageMessageIndex(102)
 
-		Game.AddStageVehicle("cVan","m5_van_carstart","NULL","Missions\\level01\\M5evade.con")
+		Game.AddStageVehicle("cVan","m5_van_carstart","NULL","special\\l1m5_van.con")
 
 		Game.AddObjective("goto","nearest road")
 			Game.SetDestination("m5_van_start", "carsphere")
@@ -43,8 +43,13 @@ Game.SelectMission("m5")
 		Game.AddStageWaypoint("m5_van_path5")
 		Game.AddStageWaypoint("m5_van_path6")
 		Game.AddStageWaypoint("m5_van_path7")
-		Game.AddStageWaypoint("m5_van_path8")
-		Game.AddStageWaypoint("m5_van_path9")
+
+		-- Removes one of the turn arounds on Easy
+		if Settings.MissionDifficulty == 2 then
+			Game.AddStageWaypoint("m5_van_path8")
+			Game.AddStageWaypoint("m5_van_path9")
+		end
+
 		Game.AddStageWaypoint("m5_van_path10")
 
 		Game.AddObjective("follow","neither")
@@ -52,7 +57,7 @@ Game.SelectMission("m5")
 		Game.CloseObjective()
 
 		Game.AddCondition("followdistance")
-			Game.SetFollowDistances(0, 230)
+			Game.SetFollowDistances(0, ({ 280, 230 })[Settings.MissionDifficulty])
 			Game.SetCondTargetVehicle("cVan")
 		Game.CloseCondition()
 
