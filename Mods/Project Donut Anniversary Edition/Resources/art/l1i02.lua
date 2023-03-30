@@ -1,0 +1,1 @@
+InjectP3DModifications("/GameData/art/l1i02.p3d", "Map_L1_I02")

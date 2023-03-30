@@ -46,6 +46,14 @@ local P3DModifications =
 		},
 	},
 
+	Map_L1_I02 =
+	{
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
+	},
+
 	Map_L1_SR1P =
 	{
 		RemovedChunkIndices =
@@ -67,12 +75,32 @@ local P3DModifications =
 		},
 	},
 
+	Map_L1_R1 =
+	{
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
+	},
+
+	Map_L1_R2 =
+	{
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
+	},
+
 	Map_L1_R3 =
 	{
 		RemovedChunkIndices =
 		{
 			-- card13 Locator
 			201,
+		},
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
 		},
 	},
 
@@ -82,7 +110,15 @@ local P3DModifications =
 		{
 			-- card15 Locator
 			109,
-		}
+		},
+	},
+
+	Map_L1_R4B =
+	{
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
 	},
 
 	Map_L1_R6 =
@@ -111,6 +147,10 @@ local P3DModifications =
 			-- card13 Locator
 			154,
 		},
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
 	},
 
 	Map_L1_Z2 =
@@ -120,6 +160,31 @@ local P3DModifications =
 			-- card12 Locator
 			262,
 		},
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
+	},
+
+	Map_L1_Z3 =
+	{
+		RemovedChunkIndices =
+		{
+			-- card12 Locator
+			262,
+		},
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
+	},
+
+	Map_L1_Z4 =
+	{
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
 	},
 
 	Map_L1_Z6 =
@@ -128,6 +193,10 @@ local P3DModifications =
 		{
 			-- card16 Locator
 			350,
+		},
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
 		},
 	},
 
@@ -144,10 +213,6 @@ local P3DModifications =
 		},
 	},
 }
-
---
--- Collector Cards
---
 
 --
 -- Error Icon Style Setting
@@ -190,6 +255,158 @@ elseif Settings.LevelTheme == 3 then
 		P3DModifications.Map_L1_R7.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
 		P3DModifications.Map_L1_Z7.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
 	end
+elseif Settings.LevelTheme == 4 then
+	local Textures = {}
+
+	LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/textures/level-themes/winter_v3.p3d", Textures, P3D.Identifiers.Texture)
+
+	local SpecialSnowTextures =
+	{
+		{
+			SourceTextureChunkName = "snow1.png",
+			TargetTextureChunkNames =
+			{
+				"asphalt_norm.bmp",
+				"Bridge_a.bmp",
+				"Bridge_c.bmp",
+				"Burns_garden_e.bmp",
+				"Burns_interior_e.bmp",
+				"bus_SIDEa.bmp",
+				"bus_frontA.bmp",
+				"bus_windowA.bmp",
+				"bus_yel.bmp",
+				"canopy_blu.bmp",
+				"canopy_yellow.bmp",
+				"car_wrecked_blue.bmp",
+				"chim_A.bmp",
+				"chim_B.bmp",
+				"concrete.bmp",
+				"DeskA.bmp",
+				"dock.bmp",
+				"ditch.BMP",
+				"driveway.bmp",
+				"driveway_dirt.BMP",
+				"driveway_dirt.bmp",
+				"driveway_dirt_entr.bmp",
+				"field.bmp",
+				"GreenBuildRoof.bmp",
+				"garbage_iron.bmp",
+				"grassC.BMP",
+				"grassC.bmp",
+				"green_shingle_old.bmp",
+				"gry_corr_metal.bmp",
+				"gry_found_drk_cool.bmp",
+				"gry_found_light_cool.bmp",
+				"junkpile_b.bmp",
+				"LibraryWallC.bmp",
+				"MalibyStacyRoofA.bmp",
+				"Metalpole.bmp",
+				"opt_grass_path.bmp",
+				"path_sticks.bmp",
+				"path_sticks_dark.bmp",
+				"QuimbyEstatesWallB.bmp",
+				"rd1_norm.bmp",
+				"rd2_country.BMP",
+				"rd2_crosswalk.bmp",
+				"rd2_crosswalk_country.bmp",
+				"rd2_norm.bmp",
+				"rd2_parking.bmp",
+				"rd2_striped.bmp",
+				"red_roof_shingles.BMP",
+				"SchoolWallC.bmp",
+				"StonecutterslodgeTopWindow.bmp",
+				"scarecrow.bmp",
+				"sidewlk.bmp",
+				"sidewlkA.bmp",
+				"sdewlk_corner.bmp",
+				"shrubRound.BMP",
+				"shrubRound.bmp",
+				"steps_conc.bmp",
+				"street_lamp.bmp",
+				"streetlampB.BMP",
+				"streetlampC.BMP",
+				"tele_pole.bmp",
+				"Treetrunk_dead.bmp",
+				"TreetrunkA.bmp",
+				"TreetrunkB.bmp",
+			},
+		},
+		{
+			SourceTextureChunkName = "snow2.png",
+			TargetTextureChunkNames =
+			{
+				"BrownBuildRoof.bmp",
+				"dumpster.bmp",
+				"firetruck.bmp",
+				"Flandershouse_D.bmp",
+				"Flandershouse_G.bmp",
+				"gry_found_drk_wrm.bmp",
+				"LardDuct.bmp",
+				"Metal_roof_blue.bmp",
+				"Metal_roof_red.bmp",
+				"Pwrplnt_towers_b.bmp",
+				"Pwrplnt_towers_c.bmp",
+				"RoofF.bmp",
+				"roof_A.bmp",
+				"roof_d.bmp",
+				"roof_F.bmp",
+				"roof_gold.bmp",
+				"Simpson_house_roof.bmp",
+				"StonecutterslodgeRoof.bmp",
+				"Wall_brown.BMP",
+			},
+		},
+		{
+			SourceTextureChunkName = "snow3.png",
+			TargetTextureChunkNames =
+			{
+				"car_wrecked_yellow.BMP",
+				"firetruck_sign.bmp",
+				"hay.bmp",
+				"kwiki21.bmp",
+				"L7krust_roof.bmp",
+				"MalibyStacyRoof.bmp",
+				"Nelsons_roof.bmp",
+				"roof_B.bmp",
+				"roof_D.bmp",
+				"streetlampC.bmp",
+				"vehicle_semi.BMP",
+			},
+		},
+	}
+
+	local ReplacedTextureChunks = {}
+
+	for k, SpecialSnowTexture in pairs(SpecialSnowTextures) do
+		local SourceTextureChunk = Textures[SpecialSnowTexture.SourceTextureChunkName]
+
+		for _, TargetTextureChunkName in pairs(SpecialSnowTexture.TargetTextureChunkNames) do
+			local SourceTextureChunkClone = SourceTextureChunk:Clone()
+
+			SourceTextureChunkClone.Name = TargetTextureChunkName
+
+			ReplacedTextureChunks[TargetTextureChunkName] = SourceTextureChunkClone
+		end
+	end
+
+	for textureName, texture in pairs(Textures) do
+		ReplacedTextureChunks[textureName] = texture
+	end
+
+	P3DModifications.Map_L1_I02.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_TERRA.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_R1.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_R2.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_R3.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_R4B.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_R6.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_R7.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_Z1.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_Z2.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_Z3.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_Z4.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_Z6.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
+	P3DModifications.Map_L1_Z7.ReplacedChunks[P3D.Identifiers.Texture] = ReplacedTextureChunks
 end
 
 --
