@@ -11,6 +11,11 @@ Output(OriginalSoundScript)
 --	This just makes the daSoundResourceData names less gross
 local SoundResources =
 {
+	"W_Idlereply_Add_card",
+	"W_Idlereply_Add_exit",
+	"W_Idlereply_Add_fishtank",
+	"W_Idlereply_Add_mission",
+
 	"P_HitByW_Lor_marge",
 	"P_HitByW_Lor_ohone",
 	"P_HitByW_Lor_ohthree",
@@ -20,6 +25,10 @@ local SoundResources =
 	"W_Idlereply_Lor_dense",
 	"W_Idlereply_Lor_intro",
 	"W_Idlereply_Lor_spiders",	
+
+	"W_Idlereply_Sol_bestmod",
+	"W_Idlereply_Sol_cmilk",
+	"W_Idlereply_Sol_snapshot",
 }
 
 for index = 1, #SoundResources do
