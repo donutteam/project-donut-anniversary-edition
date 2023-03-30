@@ -1,10 +1,13 @@
-local function DerbyStage(hudIcon, stageMessageIndex, stageTime, carName, carLocator, carCON, carDriver, isFirstStage)
+local function DerbyStage(HUDIcon, StageMessageIndex, CarName, CarLocator, CarCON, CarDriver, IsFirstStage)
 	Game.AddStage()
-		Game.SetHUDIcon(hudIcon)
-		Game.SetStageMessageIndex(stageMessageIndex)
-		Game.SetStageTime(stageTime)
+		Game.SetHUDIcon(HUDIcon)
+		Game.SetStageMessageIndex(StageMessageIndex)
 
-		if isFirstStage then
+		local RoundTime = ({ 120, 70 })[Settings.MissionDifficulty]
+
+		Game.SetStageTime(RoundTime)
+
+		if IsFirstStage then
 			Game.StartCountdown("count")
 			Game.AddToCountdownSequence("3", 1500)
 			Game.AddToCountdownSequence("2", 900)
@@ -18,10 +21,10 @@ local function DerbyStage(hudIcon, stageMessageIndex, stageTime, carName, carLoc
         Game.DisableHitAndRun()
 		Game.NoTrafficForStage()
 
-		Game.AddStageVehicle(carName, carLocator, "chase", carCON, carDriver)
+		Game.AddStageVehicle(CarName, CarLocator, "chase", CarCON, CarDriver)
        
-		Game.AddObjective("destroy","neither")
-			Game.SetObjTargetVehicle(carName)
+		Game.AddObjective("destroy", "neither")
+			Game.SetObjTargetVehicle(CarName)
 		Game.CloseObjective()
 
 		Game.AddCondition("damage")
@@ -52,13 +55,13 @@ Game.SelectMission("sr1")
 	Game.StreetRacePropsLoad("l1_sr1p.p3d;")
 	Game.StreetRacePropsUnload("l1_sr1p.p3d:")
 
-	DerbyStage("bart",    1, 90, "light_v", "sr1_honor_carstart", "missions\\level01\\sr1\\light_v.con", "bart")
+	DerbyStage("bart",    1, "light_v", "sr1_light_carstart",    "missions\\level01\\sr1\\light_v.con", "bart", true)
  
-	DerbyStage("apu",     3, 90, "apu_v",   "sr1_plow_carstart",  "missions\\level01\\sr1\\apu_v.con",   "apu")
+	DerbyStage("apu",     2, "apu_v",   "sr1_longhorn_carstart", "missions\\level01\\sr1\\apu_v.con",   "apu")
 
-	DerbyStage("moleman", 2, 90, "cBone",   "sr1_bone_carstart",  "missions\\level01\\sr1\\cBone.con",   "moleman")
+	DerbyStage("moleman", 3, "cBone",   "sr1_bone_carstart",     "missions\\level01\\sr1\\cBone.con",   "moleman")
 
-	DerbyStage("marage",  0, 90, "marge_v", "sr1_marge_carstart", "missions\\level01\\sr1\\marge_v.con", "m_prison", true)
+	DerbyStage("marage",  4, "marge_v", "sr1_marge_carstart",    "missions\\level01\\sr1\\marge_v.con", "m_prison")
 
 	Game.AddStage(4,"final")
 		Game.AddObjective("dialogue")
