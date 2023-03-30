@@ -93,6 +93,14 @@ local P3DModifications =
 		},
 	},
 
+	Map_L1_R7 =
+	{
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
+	},
+
 	Map_L1_Z1 =
 	{
 		RemovedChunkIndices =
@@ -130,6 +138,10 @@ local P3DModifications =
 			-- card17 Locator
 			173,
 		},
+		ReplacedChunks =
+		{
+			[P3D.Identifiers.Texture] = {}
+		},
 	},
 }
 
@@ -162,10 +174,21 @@ end
 if Settings.LevelTheme == 2 then
 	local Textures = {}
 
-	LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/textures/level-themes/autumn.p3d", Textures, P3D.Identifiers.Texture)
+	LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/textures/level-themes/autumn_v1.p3d", Textures, P3D.Identifiers.Texture)
 
 	for textureName, texture in pairs(Textures) do
 		P3DModifications.Map_L1_TERRA.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
+	end
+elseif Settings.LevelTheme == 3 then
+	local Textures = {}
+
+	LoadNamedChunksFromP3DFile(GetModPath() .. "/Resources/art/textures/level-themes/autumn_v3.p3d", Textures, P3D.Identifiers.Texture)
+
+	for textureName, texture in pairs(Textures) do
+		P3DModifications.Map_L1_TERRA.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
+		P3DModifications.Map_L1_R6.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
+		P3DModifications.Map_L1_R7.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
+		P3DModifications.Map_L1_Z7.ReplacedChunks[P3D.Identifiers.Texture][textureName] = texture
 	end
 end
 
