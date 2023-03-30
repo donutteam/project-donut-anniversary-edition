@@ -22,7 +22,7 @@ Game.SelectMission("m4")
 
 		Game.SetHUDIcon("powercou")
 		Game.SetStageMessageIndex(102)
-		Game.SetStageTime(50)
+		Game.SetStageTime(({ 110, 55 })[Settings.MissionDifficulty])
 
 		Game.AddObjective("delivery","neither")
 			Game.AddCollectible("PP_powerbox1")
@@ -75,7 +75,7 @@ Game.SelectMission("m4")
 		Game.SetStageMessageIndex(104)
 		Game.SetStageTime(10)
 
-		Game.AddStageVehicle("cVan","m4_cVan_carstart","NULL","Missions\\level01\\M4evade.con")
+		Game.AddStageVehicle("cVan","m4_cVan_carstart","NULL","special\\l1m4_van.con")
 
 		Game.AddObjective("getin","neither")
 			Game.SetObjTargetVehicle("current")
@@ -93,8 +93,8 @@ Game.SelectMission("m4")
 		Game.SetVehicleAIParams("cVan", 100, 101)
 		Game.SetStageAITargetCatchupParams("cVan", 20, 70)
 
+		Game.AddStageWaypoint("m4_van_path1")
 		Game.AddStageWaypoint("m4_van_path2")
-		Game.AddStageWaypoint("m4_van_path3")
 
 		Game.AddObjective("follow","neither")
 			Game.SetObjTargetVehicle("cVan")

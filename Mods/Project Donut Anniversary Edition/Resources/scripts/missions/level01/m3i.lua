@@ -106,7 +106,7 @@ Game.SelectMission("m3")
 		Game.SetHUDIcon("pwrplant")
 		Game.SetStageMessageIndex(105)
 
-		Game.AddStageVehicle("cVan", "m3_cVan_carstart", "NULL", "Missions\\level01\\M3evade.con", "jimbo")
+		Game.AddStageVehicle("cVan", "m3_cVan_carstart", "NULL", "special\\l1m3_van.con", "jimbo")
 
 		Game.AddObjective("goto")
 			Game.SetDestination("m3_pwrplant", "carsphere")
