@@ -16,6 +16,16 @@ local SoundResources =
 	"W_Idlereply_Add_fishtank",
 	"W_Idlereply_Add_mission",
 
+	"P_HitByW_Jke_ohheavens",
+	"P_HitByW_Jke_ow",
+	"W_Idlereply_Jke_burp",
+	"W_Idlereply_Jke_kick",
+	"W_Idlereply_Jke_missme",
+	"W_Idlereply_Jke_mpbq",
+	"W_Idlereply_Jke_pizza",
+	"W_Idlereply_Jke_vape",
+	"W_Idlereply_Jke_wonder",
+
 	"P_HitByW_Lor_marge",
 	"P_HitByW_Lor_ohone",
 	"P_HitByW_Lor_ohthree",
