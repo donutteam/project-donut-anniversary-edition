@@ -9,6 +9,12 @@ Game.BindReward("cVan",      "art\\cars\\cVan.p3d", 	   "car", "forsale",      1
 
 Game.BindReward("cBone",     "art\\cars\\cBone.p3d",       "car", "forsale",      1, 100 * Settings.RewardPriceMultiplier, "gil")
 Game.BindReward("rocke_v",   "art\\cars\\rocke_v.p3d",     "car", "forsale",      1, 100 * Settings.RewardPriceMultiplier, "gil")
+
+Game.BindReward("fs_dm2",    "art\\cars\\fs_dm2.p3d",      "car", "forsale",      1,  25 * Settings.RewardPriceMultiplier, "gil")
+Game.BindReward("fs_dm3",    "art\\cars\\fs_dm3.p3d",      "car", "forsale",      1,  25 * Settings.RewardPriceMultiplier, "gil")
+Game.BindReward("clfamily",  "art\\cars\\clfamily.p3d",    "car", "forsale",      1,  25 * Settings.RewardPriceMultiplier, "gil")
+
+Game.BindReward("catapult",  "art\\cars\\catapult.p3d",    "car", "forsale",      1, 100 * Settings.RewardPriceMultiplier, "gil")
 Game.BindReward("donut_v",   "art\\cars\\donut_v.p3d",     "car", "forsale",      1, 100 * Settings.RewardPriceMultiplier, "gil")
 
 Game.BindReward("homer",     "art\\chars\\homer_m.p3d",    "skin", "defaultskin", 1)
