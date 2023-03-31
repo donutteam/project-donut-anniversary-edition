@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model>
+	<Shader Name="BurnsMansion_d_m" TextureName="BurnsMansion_d.bmp" Red="255" Green="255" Blue="255" Alpha="255" />
+	<Mesh Name="common155Shape_000" VertexCount="84" PrimitiveCount="44">
+		<Shader Name="BurnsMansion_d_m">
+			<Vertex PositionX="-249.4547" PositionY="20.5549316" PositionZ="92.81529" U="1.03841019" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="20.5549316" PositionZ="93.81529" U="0.957000852" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="20.5549316" PositionZ="93.81529" U="1.03841019" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.0748386" PositionZ="92.81529" U="0.9090528" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.0748386" PositionZ="92.81529" U="1.03841019" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.0748386" PositionZ="93.81529" U="0.698552668" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.0748386" PositionZ="93.81529" U="0.9090528" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.0748386" PositionZ="93.81529" U="0.957000852" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.0748386" PositionZ="93.81529" U="1.03841019" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.5549316" PositionZ="92.79872" U="0.960430741" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.5549316" PositionZ="92.81529" U="0.9090528" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.5549316" PositionZ="94.19107" U="0.698552668" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.5549316" PositionZ="94.19107" U="0.9090528" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.5549316" PositionZ="94.81529" U="0.654166043" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.5549316" PositionZ="94.81529" U="0.960430741" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="28.5549316" PositionZ="94.81529" U="0.960430741" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.00526" PositionZ="92.79872" U="0.960430741" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.00526" PositionZ="92.79872" U="0.960430741" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.00526" PositionZ="95.8152847" U="0.654166043" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.00526" PositionZ="95.8152847" U="0.654166043" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.00526" PositionZ="95.8152847" U="0.960430741" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.00526" PositionZ="95.8152847" U="0.960430741" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.5549316" PositionZ="92.79872" U="0.960430741" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.5549316" PositionZ="95.8152847" U="0.654166043" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.5549316" PositionZ="95.8152847" U="0.960430741" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-249.4547" PositionY="29.5549316" PositionZ="95.8152847" U="0.960430741" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="20.5549316" PositionZ="91.0232" U="0.957000852" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="20.5549316" PositionZ="93.81529" U="0.957000852" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="20.5549316" PositionZ="93.81529" U="1.03841019" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="28.0748386" PositionZ="91.0232" U="0.698552668" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="28.0748386" PositionZ="91.0232" U="0.957000852" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="28.0748386" PositionZ="93.81529" U="0.698552668" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="28.0748386" PositionZ="93.81529" U="0.9090528" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="28.0748386" PositionZ="93.81529" U="0.957000852" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.574738" PositionY="28.0748386" PositionZ="93.81529" U="1.03841019" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.4547" PositionY="28.5549316" PositionZ="91.0232" U="0.698552668" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.4547" PositionY="28.5549316" PositionZ="94.19107" U="0.698552668" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.4547" PositionY="28.5549316" PositionZ="94.19107" U="0.9090528" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-248.274734" PositionY="21.4617653" PositionZ="93.11865" U="1" V="-0.9" Red="89" Green="89" Blue="73" Alpha="255" />
+			<Vertex PositionX="-248.274734" PositionY="28.2022038" PositionZ="93.11865" U="0.9999999" V="1" Red="89" Green="89" Blue="73" Alpha="255" />
+			<Vertex PositionX="-244.874756" PositionY="21.4617653" PositionZ="93.11865" U="2.98023224E-08" V="-0.9" Red="89" Green="89" Blue="73" Alpha="255" />
+			<Vertex PositionX="-244.874741" PositionY="28.2022038" PositionZ="93.11865" U="0" V="0.9999999" Red="89" Green="89" Blue="73" Alpha="255" />
+			<Vertex PositionX="-244.274765" PositionY="21.4617653" PositionZ="93.11865" U="1" V="-0.9" Red="89" Green="89" Blue="73" Alpha="255" />
+			<Vertex PositionX="-244.274734" PositionY="28.2022038" PositionZ="93.11865" U="1" V="1" Red="89" Green="89" Blue="73" Alpha="255" />
+			<Vertex PositionX="-240.892517" PositionY="28.5549316" PositionZ="91.0232" U="0.9090528" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.892517" PositionY="28.5549316" PositionZ="94.19107" U="0.698552668" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.892517" PositionY="28.5549316" PositionZ="94.19107" U="0.9090528" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.874741" PositionY="21.4617653" PositionZ="93.11865" U="0" V="-0.9" Red="89" Green="89" Blue="73" Alpha="255" />
+			<Vertex PositionX="-240.874741" PositionY="28.2022038" PositionZ="93.11865" U="0" V="1" Red="89" Green="89" Blue="73" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="20.5549316" PositionZ="91.0232" U="1.03841019" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="20.5549316" PositionZ="93.81529" U="0.957000852" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="20.5549316" PositionZ="93.81529" U="1.03841019" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="28.0748386" PositionZ="91.0232" U="0.9090528" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="28.0748386" PositionZ="91.0232" U="1.03841019" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="28.0748386" PositionZ="93.81529" U="0.698552668" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="28.0748386" PositionZ="93.81529" U="0.9090528" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="28.0748386" PositionZ="93.81529" U="0.957000852" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-240.574738" PositionY="28.0748386" PositionZ="93.81529" U="1.03841019" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="20.5549316" PositionZ="93.81529" U="0.957000852" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="20.5549316" PositionZ="93.81529" U="1.03841019" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.0748386" PositionZ="93.81529" U="0.698552668" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.0748386" PositionZ="93.81529" U="0.9090528" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.0748386" PositionZ="93.81529" U="0.957000852" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.0748386" PositionZ="93.81529" U="1.03841019" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.5549316" PositionZ="92.79872" U="0.654166043" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.5549316" PositionZ="94.19107" U="0.698552668" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.5549316" PositionZ="94.19107" U="0.9090528" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.5549316" PositionZ="94.81529" U="0.654166043" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.5549316" PositionZ="94.81529" U="0.654166043" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="28.5549316" PositionZ="94.81529" U="0.960430741" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="29.00526" PositionZ="95.8152847" U="0.654166043" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="29.00526" PositionZ="95.8152847" U="0.654166043" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="29.00526" PositionZ="95.8152847" U="0.960430741" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="29.00526" PositionZ="95.8152847" U="0.960430741" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="29.5549316" PositionZ="95.8152847" U="0.654166043" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="29.5549316" PositionZ="95.8152847" U="0.654166043" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892517" PositionY="29.5549316" PositionZ="95.8152847" U="0.960430741" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892471" PositionY="20.5549316" PositionZ="92.81529" U="0.957000852" V="1.1539973" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892471" PositionY="28.0748386" PositionZ="92.81529" U="0.698552668" V="0.6941899" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892471" PositionY="28.0748386" PositionZ="92.81529" U="0.957000852" V="1.19508994" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892471" PositionY="28.5549316" PositionZ="92.81529" U="0.698552668" V="0.7308815" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892471" PositionY="29.00526" PositionZ="92.79872" U="0.654166043" V="0.508805335" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892471" PositionY="29.00526" PositionZ="92.79872" U="0.654166043" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Vertex PositionX="-239.892471" PositionY="29.5549316" PositionZ="92.79872" U="0.654166043" V="0.546162665" Red="142" Green="145" Blue="150" Alpha="255" />
+			<Primitive Vertex1="4" Vertex2="0" Vertex3="7" />
+			<Primitive Vertex1="1" Vertex2="7" Vertex3="0" />
+			<Primitive Vertex1="8" Vertex2="2" Vertex3="33" />
+			<Primitive Vertex1="27" Vertex2="33" Vertex3="2" />
+			<Primitive Vertex1="3" Vertex2="5" Vertex3="10" />
+			<Primitive Vertex1="11" Vertex2="10" Vertex3="5" />
+			<Primitive Vertex1="15" Vertex2="9" Vertex3="68" />
+			<Primitive Vertex1="64" Vertex2="68" Vertex3="9" />
+			<Primitive Vertex1="9" Vertex2="13" Vertex3="17" />
+			<Primitive Vertex1="19" Vertex2="17" Vertex3="13" />
+			<Primitive Vertex1="64" Vertex2="82" Vertex3="69" />
+			<Primitive Vertex1="73" Vertex2="69" Vertex3="82" />
+			<Primitive Vertex1="21" Vertex2="14" Vertex3="71" />
+			<Primitive Vertex1="67" Vertex2="71" Vertex3="14" />
+			<Primitive Vertex1="22" Vertex2="16" Vertex3="23" />
+			<Primitive Vertex1="18" Vertex2="23" Vertex3="16" />
+			<Primitive Vertex1="22" Vertex2="24" Vertex3="83" />
+			<Primitive Vertex1="74" Vertex2="83" Vertex3="24" />
+			<Primitive Vertex1="76" Vertex2="72" Vertex3="83" />
+			<Primitive Vertex1="81" Vertex2="83" Vertex3="72" />
+			<Primitive Vertex1="25" Vertex2="20" Vertex3="75" />
+			<Primitive Vertex1="70" Vertex2="75" Vertex3="20" />
+			<Primitive Vertex1="26" Vertex2="30" Vertex3="28" />
+			<Primitive Vertex1="34" Vertex2="28" Vertex3="30" />
+			<Primitive Vertex1="29" Vertex2="35" Vertex3="32" />
+			<Primitive Vertex1="37" Vertex2="32" Vertex3="35" />
+			<Primitive Vertex1="6" Vertex2="31" Vertex3="12" />
+			<Primitive Vertex1="36" Vertex2="12" Vertex3="31" />
+			<Primitive Vertex1="38" Vertex2="40" Vertex3="39" />
+			<Primitive Vertex1="41" Vertex2="39" Vertex3="40" />
+			<Primitive Vertex1="43" Vertex2="42" Vertex3="48" />
+			<Primitive Vertex1="47" Vertex2="48" Vertex3="42" />
+			<Primitive Vertex1="45" Vertex2="44" Vertex3="54" />
+			<Primitive Vertex1="52" Vertex2="54" Vertex3="44" />
+			<Primitive Vertex1="46" Vertex2="55" Vertex3="65" />
+			<Primitive Vertex1="60" Vertex2="65" Vertex3="55" />
+			<Primitive Vertex1="53" Vertex2="49" Vertex3="56" />
+			<Primitive Vertex1="50" Vertex2="56" Vertex3="49" />
+			<Primitive Vertex1="57" Vertex2="51" Vertex3="62" />
+			<Primitive Vertex1="58" Vertex2="62" Vertex3="51" />
+			<Primitive Vertex1="63" Vertex2="59" Vertex3="79" />
+			<Primitive Vertex1="77" Vertex2="79" Vertex3="59" />
+			<Primitive Vertex1="66" Vertex2="61" Vertex3="80" />
+			<Primitive Vertex1="78" Vertex2="80" Vertex3="61" />
+		</Shader>
+	</Mesh>
+</Model>
