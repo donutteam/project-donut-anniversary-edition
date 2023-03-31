@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomShopSupport>	
+	<PhoneBooth> 
+		<Selector Level="1" Locator="top_secret_phonebooth"/>
+		
+		<IncludedItems />
+		
+		<FreeItems>
+			<Car>bartteal</Car>
+			<Car>comicalt</Car>
+			<Car>fishboat</Car>
+			<Car>frinkalt</Car>
+			<Car>miniufo</Car>
+			<Car>smithalt</Car>
+			<Car>waspbike</Car>
+		</FreeItems>
+	</PhoneBooth>
+</CustomShopSupport>

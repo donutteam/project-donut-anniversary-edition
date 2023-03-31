@@ -119,6 +119,24 @@ local P3DModifications =
 
 	Map_L1_R4B =
 	{
+		AdditionalFiles =
+		{
+			GetModPath() .. "/Resources/art/map/l1r4b.p3d",	
+		},
+		RemovedChunkIndices =
+		{
+			-- doorShape (Static Phys)
+			237,
+
+			-- common155Shape_000 (Static Entity)
+			250,
+
+			-- common155Shape_008 (Static Entity)
+			258,
+
+			-- common155Shape_016 (Static Entity)
+			263,
+		},
 		ReplacedChunks =
 		{
 			[P3D.Identifiers.Texture] = {}
@@ -185,6 +203,15 @@ local P3DModifications =
 
 	Map_L1_Z4 =
 	{
+		AdditionalFiles =
+		{
+			GetModPath() .. "/Resources/art/map/l1z4.p3d",
+		},
+		RemovedChunkIndices =
+		{
+			-- l1_krustyglass_Shape (Dyna Phys)
+			388,
+		},
 		ReplacedChunks =
 		{
 			[P3D.Identifiers.Texture] = {}
