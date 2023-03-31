@@ -98,4 +98,7 @@ elseif Settings.HitAndRunCarModel == 3 then
 elseif Settings.HitAndRunCarModel == 4 then
 	-- Standard Police Car
 	Game.SetShadowAdjustments(-0.1, 0.0, -0.1, 0.0, -0.1, 0.0, -0.1, -0.1)
+elseif Settings.HitAndRunCarModel == 5 then
+	-- Wasp Bike
+	Game.SetShadowAdjustments(-1, -1.6, -1, 0.05, -1, 0.15, -1, 1.7)
 end

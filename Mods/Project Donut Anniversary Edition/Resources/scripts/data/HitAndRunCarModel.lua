@@ -8,6 +8,7 @@ local HitAndRunCarModels =
 	"hjackpol",
 	"miniufo",
 	"cPolice",
+	"waspbike",
 }
 
 HitAndRunCarModel = HitAndRunCarModels[Settings.HitAndRunCarModel]
