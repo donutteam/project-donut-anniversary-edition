@@ -70,7 +70,8 @@ local P3DModifications =
 	{
 		AdditionalFiles =
 		{
-			GetModPath() .. "/Resources/art/locators/cards.p3d",
+			GetModPath() .. "/Resources/art/locators/l1_cards.p3d",
+			GetModPath() .. "/Resources/art/locators/l1_i08_entrance.p3d",
 		},
 		ReplacedChunks =
 		{
