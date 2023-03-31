@@ -40,6 +40,9 @@ local SoundResources =
 	"W_Idlereply_Lor_intro",
 	"W_Idlereply_Lor_spiders",	
 
+	"P_HitByW_Luc_test",
+	"W_Idlereply_Luc_test",
+
 	"W_Idlereply_Sol_bestmod",
 	"W_Idlereply_Sol_cmilk",
 	"W_Idlereply_Sol_snapshot",
