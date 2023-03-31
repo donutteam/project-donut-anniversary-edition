@@ -34,7 +34,7 @@ This mod features the following content:
 	- New License Screen
 	- Secret Characters (can you find us all?)
 
-All of this comes in at just over 8 megabytes, a little over half the file size of the original mod, despite the new content.
+All of this comes in at just over 13 megabytes, around 55% of the original mod, despite the new content.
 
 This reduction is achieved mostly by using [LuaP3DLib](https://github.com/hampo/luap3dlib) to load and dynamically modify files from the base game instead of shipping loads of unchanged data.
 
