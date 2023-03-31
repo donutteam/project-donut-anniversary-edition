@@ -20,13 +20,20 @@ Game.LoadP3DFile("art\\l01_fx.p3d", "GMA_LEVEL_OTHER")
 Game.LoadP3DFile("art\\phonecamera.p3d")
 Game.LoadP3DFile("art\\wrench.p3d")
 
-Game.LoadP3DFile("art\\cars\\" .. HitAndRunCarModel .. ".p3d")
-Game.LoadP3DFile("art\\cars\\glastruc.p3d")
 Game.LoadP3DFile("art\\cars\\huskA.p3d")
+
+Game.LoadP3DFile("art\\cars\\" .. HitAndRunCarModel .. ".p3d")
+
+Game.LoadP3DFile("art\\cars\\compactA.p3d")
+Game.LoadP3DFile("art\\cars\\dtstruck.p3d")
+Game.LoadP3DFile("art\\cars\\garbage.p3d")
+Game.LoadP3DFile("art\\cars\\glastruc.p3d")
+Game.LoadP3DFile("art\\cars\\kumquat.p3d")
 Game.LoadP3DFile("art\\cars\\minivanA.p3d")
-Game.LoadP3DFile("art\\cars\\pickupA.p3d")
 Game.LoadP3DFile("art\\cars\\nuctruck.p3d")
+Game.LoadP3DFile("art\\cars\\pickupA.p3d")
 Game.LoadP3DFile("art\\cars\\schoolbu.p3d")
+Game.LoadP3DFile("art\\cars\\SUVA.p3d")
 
 Game.LoadP3DFile("art\\chars\\homer_kickwave.p3d")
 Game.LoadP3DFile("art\\chars\\homer_electrocuted.p3d")

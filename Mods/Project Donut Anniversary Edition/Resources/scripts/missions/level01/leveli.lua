@@ -220,11 +220,16 @@ Game.AddPurchaseCarReward("simpson", "barney", "npd", "barney_loc", 1.3, "barney
 	Game.AddPurchaseCarNPCWaypoint("barney", "barney_walk1")
 
 Game.CreateTrafficGroup(0)
-	Game.AddTrafficModel("minivanA",  2)
+	Game.AddTrafficModel("compactA",  1)
+    Game.AddTrafficModel("dtstruck",  1, 1)
+	Game.AddTrafficModel("garbage",   1, 1)
 	Game.AddTrafficModel("glastruc",  1, 1)
-	-- Game.AddTrafficModel("cDonut", 1, 1)
-	Game.AddTrafficModel("nuctruck",	 1, 1)
+	Game.AddTrafficModel("kumquat",   1, 1)
+	Game.AddTrafficModel("minivanA",  1)
+	Game.AddTrafficModel("nuctruck",  1, 1)
 	Game.AddTrafficModel("pickupA",   1)
+	Game.AddTrafficModel("schoolbu",  1, 1)
+	Game.AddTrafficModel("SUVA",      1)
 Game.CloseTrafficGroup()
 
 -- Z1/R1

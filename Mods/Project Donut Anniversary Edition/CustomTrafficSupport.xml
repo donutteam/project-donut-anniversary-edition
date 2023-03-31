@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomTrafficSupport>
-	
+	<Level Number="1">
+		<AllocatedCars Amount="10" />
+
+		<MaxTraffic Amount="5" />
+		<MaxTrafficOnFoot Amount="10" />
+	</Level>
 </CustomTrafficSupport>
