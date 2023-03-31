@@ -186,9 +186,9 @@ Game.AddAmbientCharacter("jake", "ambient_jake", 1.3)
 	Game.AddAmbientNPCWaypoint("jake", "ambient_jake_walk2")
 	Game.AddAmbientNPCWaypoint("jake", "ambient_jake_walk3")
 
--- Game.AddAmbientCharacter("jeff", "ambient_jeff", 1.3)
---	Game.AddAmbientNPCWaypoint("jeff", "ambient_jeff_walk1")
---	Game.AddAmbientNPCWaypoint("jeff", "ambient_jeff_walk2")
+Game.AddAmbientCharacter("jeff", "ambient_jeff", 1.3)
+	Game.AddAmbientNPCWaypoint("jeff", "ambient_jeff_walk1")
+	Game.AddAmbientNPCWaypoint("jeff", "ambient_jeff_walk2")
 
 Game.AddAmbientCharacter("kenny", "ambient_kenny", 1.3)
 	Game.AddAmbientNPCWaypoint("kenny", "ambient_kenny_walk1")
