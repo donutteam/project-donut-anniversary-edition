@@ -16,6 +16,9 @@ Game.BindReward("fs_dm3",    "art\\cars\\fs_dm3.p3d",      "car", "forsale",    
 Game.BindReward("clfamily",  "art\\cars\\clfamily.p3d",    "car", "forsale",      1,  25 * Settings.RewardPriceMultiplier, "gil")
 
 Game.BindReward("catapult",  "art\\cars\\catapult.p3d",    "car", "forsale",      1, 100 * Settings.RewardPriceMultiplier, "gil")
+Game.BindReward("drone",     "art\\cars\\drone.p3d",       "car", "forsale",      1, 100 * Settings.RewardPriceMultiplier, "gil")
+Game.BindReward("mrplo_v",   "art\\cars\\mrplo_v.p3d",     "car", "forsale",      1, 100 * Settings.RewardPriceMultiplier, "gil")
+Game.BindReward("mrploalt",  "art\\cars\\mrploalt.p3d",    "car", "forsale",      1, 100 * Settings.RewardPriceMultiplier, "gil")
 
 Game.BindReward("homer",     "art\\chars\\homer_m.p3d",    "skin", "defaultskin", 1)
 
@@ -46,17 +49,26 @@ Game.BindReward("h_angry",   "art\\chars\\h_angr_m.p3d",   "skin", "forsale",   
 Game.BindReward("h_glutton", "art\\chars\\h_glut_m.p3d",   "skin", "forsale",     1, 40 * Settings.RewardPriceMultiplier, "interior")
 Game.BindReward("h_pinpals", "art\\chars\\h_pinp_m.p3d",   "skin", "forsale",     1, 40 * Settings.RewardPriceMultiplier, "interior")
 
---                               Top Speed   Acceleration   Toughness   Handling
-Game.SetCarAttributes("famil_v", 1.0,        1.5,           2.5,        4.0)
-Game.SetCarAttributes("cletu_v", 1.0,        1.0,           3.5,        2.5)
-Game.SetCarAttributes("elect_v", 2.0,        1.5,           1.5,        4.0)
-Game.SetCarAttributes("plowk_v", 1.5,        0.5,           5.0,        1.5)
-Game.SetCarAttributes("cDuff",   0.5,        0.5,           4.0,        1.0)
-Game.SetCarAttributes("cVan",    1.5,        1.5,           3.5,        3.0)
+--                                Top Speed   Acceleration   Toughness   Handling
+Game.SetCarAttributes("famil_v",  1.0,        1.5,           2.5,        4.0)
+Game.SetCarAttributes("cletu_v",  1.0,        1.0,           3.5,        2.5)
+Game.SetCarAttributes("elect_v",  2.0,        1.5,           1.5,        4.0)
+Game.SetCarAttributes("plowk_v",  1.5,        0.5,           5.0,        1.5)
+Game.SetCarAttributes("cDuff",    0.5,        0.5,           4.0,        1.0)
+Game.SetCarAttributes("cVan",     1.5,        1.5,           3.5,        3.0)
 
-Game.SetCarAttributes("cBone",   0.5,        0.5,           4.0,        1.0)
-Game.SetCarAttributes("rocke_v", 5.0,        5.0,           0.5,        1.0)
-Game.SetCarAttributes("donut_v", 1.0,        1.5,           2.5,        4.0)
+Game.SetCarAttributes("cBone",    0.5,        0.5,           4.0,        1.0)
+Game.SetCarAttributes("rocke_v",  5.0,        5.0,           0.5,        0.5)
+
+Game.SetCarAttributes("donut_v",  1.0,        1.5,           2.5,        4.0)
+Game.SetCarAttributes("fs_dm2",   1.0,        1.5,           2.5,        4.0)
+Game.SetCarAttributes("fs_dm3",   1.0,        1.5,           2.5,        4.0)
+Game.SetCarAttributes("clfamily", 1.0,        1.5,           2.5,        4.0)
+
+Game.SetCarAttributes("catapult", 1.0,        1.0,           1.0,        1.0)
+Game.SetCarAttributes("drone",    1.0,        2.0,           2.0,        4.0)
+Game.SetCarAttributes("mrplo_v",  1.0,        1.5,           3.0,        1.0)
+Game.SetCarAttributes("mrploalt", 1.0,        1.5,           3.0,        1.0)
 
 Game.SetTotalGags(1, 16)
 Game.SetTotalWasps(1, 40)
