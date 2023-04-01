@@ -2824,7 +2824,7 @@ create carSoundParameters named drone
     SetEngineClipName ( "cSedan_car" )
     SetEngineIdleClipName ( "cSedan_car" )
     SetDamagedEngineClipName ( "fire" )
-    SetHornClipName ( "siren" )
+    SetHornClipName ( "cCellA_horn" )
     SetReversePitchCapKmh ( 50.000000 )
     SetReversePitchRange ( 0.500000 1.070000 )
     SetShiftPoint ( 1 0.010000 )

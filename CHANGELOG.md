@@ -5,6 +5,7 @@ Added a trigger to the Burns' Mansion area to prevent you from getting Hit & Run
 ### Cars
 
 - Added car sounds to the DM2 and DM3 Family Sedans.
+- Changed the horn for the Drone to a regular horn instead of the siren.
 - Fixed an oversight where the DTS Glass Truck had a driver for some reason.
 
 ### Mission 3
