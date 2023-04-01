@@ -38,7 +38,7 @@ local SoundResources =
 	"P_HitByW_Lor_police",
 	"W_Idlereply_Lor_dense",
 	"W_Idlereply_Lor_intro",
-	"W_Idlereply_Lor_spiders",	
+	"W_Idlereply_Lor_spiders",
 
 	"P_HitByW_Luc_test",
 	"W_Idlereply_Luc_test",
