@@ -2,6 +2,9 @@
 ## General
 Added a trigger to the Burns' Mansion area to prevent you from getting Hit & Runs while in there.
 
+## Cars
+Fixed an oversight where the DTS Glass Truck had a driver for some reason.
+
 ### Mission 3
 
 - Added a timer to the stage after destroying Smithers.
