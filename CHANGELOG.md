@@ -13,6 +13,9 @@ Added a trigger to the Burns' Mansion area to prevent you from getting Hit & Run
 - Added a timer to the stage after destroying Smithers.
 - Fixed a crash at the end from using the wrong locator name.
 
+### Mission 8
+Fixed an issue where this mission's load script did not work, preventing you from advancing to the credits.
+
 ## Version 1.0.1
 
 - Fixed an issue where Jake's dialogue was exported at the wrong sample rate because Audacity sucks.
