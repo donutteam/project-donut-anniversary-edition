@@ -105,21 +105,25 @@ Game.SelectMission("m3")
 	Game.AddStage()
 		Game.SetHUDIcon("pwrplant")
 		Game.SetStageMessageIndex(105)
+		Game.SetStageTime(({ 130, 65 })[Settings.MissionDifficulty])
 
 		Game.AddStageVehicle("cVan", "m3_cVan_carstart", "NULL", "gen\\l1m3_van.con", "jimbo")
 
 		Game.AddObjective("goto")
-			Game.SetDestination("m3_pwrplant", "carsphere")
+			Game.SetDestination("m3_powerplant", "carsphere")
 			Game.SetCollectibleEffect("wrench_collect")
 		Game.CloseObjective()
+
+		Game.AddCondition("damage")
+			Game.SetCondMinHealth(0.0)
+			Game.SetCondTargetVehicle("current")
+		Game.CloseCondition()
 
 		Game.AddCondition("outofvehicle")
 			Game.SetCondTime(10000)
 		Game.CloseCondition()
 
-		Game.AddCondition("damage")
-			Game.SetCondMinHealth(0.0)
-			Game.SetCondTargetVehicle("current")
+		Game.AddCondition("timeout")
 		Game.CloseCondition()
 	Game.CloseStage()
 
@@ -169,7 +173,6 @@ Game.SelectMission("m3")
 
 		Game.AddCondition("timeout")
 		Game.CloseCondition()
-
 	Game.CloseStage()
 Game.CloseMission()
 
