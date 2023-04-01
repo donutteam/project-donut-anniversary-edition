@@ -1,7 +1,10 @@
 ## Version 1.0.2
+## General
+Added a trigger to the Burns' Mansion area to prevent you from getting Hit & Runs while in there.
+
 ### Mission 3
 
-- Added a timer to the stage after destroying Smithers/
+- Added a timer to the stage after destroying Smithers.
 - Fixed a crash at the end from using the wrong locator name.
 
 ## Version 1.0.1
