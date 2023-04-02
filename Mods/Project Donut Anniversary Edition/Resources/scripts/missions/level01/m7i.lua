@@ -7,6 +7,8 @@ Game.SelectMission("m7")
 	Game.StreetRacePropsLoad("l1m7door.p3d;")
 	Game.StreetRacePropsUnload("l1m7door.p3d:")
 
+	Game.SetParkedCarsEnabled(1)
+	Game.SetPedsEnabled(1)
 
 	Game.AddStage(0)
 		Game.RESET_TO_HERE()

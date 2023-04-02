@@ -9,8 +9,8 @@ Game.SelectMission("m7sd")
 
 	Game.UsePedGroup(7)
 
-	Game.StreetRacePropsLoad("l1m7door.p3d;")
-	Game.StreetRacePropsUnload("l1m7door.p3d:")
+	-- Game.StreetRacePropsLoad("l1m7door.p3d;")
+	-- Game.StreetRacePropsUnload("l1m7door.p3d:")
 
 	Game.AddStage()
 		Game.SetHUDIcon("pwrplant")

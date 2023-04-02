@@ -2,6 +2,11 @@
 ### Cars
 Separated the two colors of Wasp Bike into two separate vehicles.
 
+### Mission 7
+
+- The sunday drive mission no longer loads the power plant door.
+- The main mission now enables parked cars and peds.
+
 ## Version 1.0.2
 ### General
 Added a trigger to the Burns' Mansion area to prevent you from getting Hit & Runs while in there.
