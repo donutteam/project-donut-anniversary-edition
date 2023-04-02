@@ -1,3 +1,7 @@
+## Version 1.0.3
+### Cars
+Separated the two colors of Wasp Bike into two separate vehicles.
+
 ## Version 1.0.2
 ### General
 Added a trigger to the Burns' Mansion area to prevent you from getting Hit & Runs while in there.

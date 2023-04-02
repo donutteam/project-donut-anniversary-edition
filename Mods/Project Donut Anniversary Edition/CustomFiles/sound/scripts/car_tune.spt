@@ -3195,6 +3195,38 @@ create carSoundParameters named smithalt
     SetCarDoorCloseClipName ( "famil_close" )
     SetDecayFinishTrim ( 0.830000 )
 }
+create carSoundParameters named waspbalt
+{
+    SetEngineClipName ( "waspbike" )
+    SetEngineIdleClipName ( "waspbike" )
+    SetDamagedEngineClipName ( "fire" )
+    SetHornClipName ( "waspbike_horn" )
+    SetReversePitchCapKmh ( 50.000000 )
+    SetReversePitchRange ( 0.350000 0.810000 )
+    SetIdleEnginePitch ( 0.250000 )
+    SetShiftPoint ( 1 0.010000 )
+    SetShiftPoint ( 2 1.000000 )
+    SetShiftPoint ( 3 1.000000 )
+    SetShiftPoint ( 4 1.000000 )
+    SetShiftPoint ( 5 1.000000 )
+    SetGearPitchRange ( 1 0.310000 1.260000 )
+    SetGearPitchRange ( 2 0.720000 1.300000 )
+    SetGearPitchRange ( 3 0.870000 1.260000 )
+    SetGearPitchRange ( 4 1.170000 1.220000 )
+    SetGearPitchRange ( 5 1.200000 1.300000 )
+    SetGearShiftPitchDrop ( 1 0.580000 )
+    SetGearShiftPitchDrop ( 2 0.640000 )
+    SetGearShiftPitchDrop ( 3 0.610000 )
+    SetGearShiftPitchDrop ( 4 0.610000 )
+    SetGearShiftPitchDrop ( 5 0.580000 )
+    SetDecayTimeMsecs ( 118.000000 )
+    SetDelayTimeMsecs ( 155 )
+    SetAttackTimeMsecs ( 163.000000 )
+    SetDecayFinishTrim ( 0.640000 )
+    SetDownshiftDamperSize ( 0.110000 )
+    SetRoadSkidClipName ( "blank" )
+    SetDirtSkidClipName ( "blank" )
+}
 create carSoundParameters named waspbike
 {
     SetEngineClipName ( "waspbike" )
