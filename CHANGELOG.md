@@ -1,6 +1,8 @@
 ## Version 1.0.3
 ### Cars
-Separated the two colors of Wasp Bike into two separate vehicles.
+
+- Improved the model for the Rusty Bucket.
+- Separated the two colors of Wasp Bike into two separate vehicles.
 
 ### Mission 7
 
