@@ -1,12 +1,11 @@
-## Version 1.0.4
-### Characters
-- Fixed an issue where some of Homer's outfits did not have the correct character code.
-
 ## Version 1.0.3
 ### Cars
 
 - Improved the model for the Rusty Bucket.
 - Separated the two colors of Wasp Bike into two separate vehicles.
+
+### Characters
+- Fixed an issue where some of Homer's outfits did not have the correct character code.
 
 ### Mission 7
 
